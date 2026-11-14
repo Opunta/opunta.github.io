@@ -338,10 +338,12 @@ h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,'Segoe UI','Liberation 
 /* Ürün kartı başlığı: gövdeden belirgin biçimde büyük ve kalın */
 .xtitle h3{font-size:23px;font-weight:800;letter-spacing:-.01em;line-height:1.2;margin-bottom:9px;color:var(--text)}
 .xtitle .xsub{
-  display:inline-block;font:700 11.5px 'Helvetica Neue',Helvetica,Arial,'Segoe UI','Liberation Sans',sans-serif;
-  letter-spacing:.09em;text-transform:uppercase;color:var(--accent);
+  display:inline-block;font:700 13px 'Helvetica Neue',Helvetica,Arial,'Segoe UI','Liberation Sans',sans-serif;
+  letter-spacing:.03em;color:var(--accent);
   background:var(--surface-2);padding:4px 10px;border-radius:6px;
 }
+[data-theme="dark"] .xtitle .xsub{color:#C9B8FF;background:rgba(139,92,246,.16)}
+[data-theme="dark"] .xcard .xbody-inner .mono-list strong{color:#FFFFFF;font-weight:700}
 .xhead{margin-bottom:12px}
 /* Başlık içi İngilizce açıklama (TR modda) */
 .en-sub{font-size:.62em;font-weight:600;color:var(--muted);letter-spacing:.01em}
@@ -422,7 +424,7 @@ h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,'Segoe UI','Liberation 
 .story-grid .prose{max-width:none}
 .story-photo{margin:0}
 .story-photo img{width:100%;height:auto;display:block}
-.brand-word{color:var(--accent);font-weight:700;font-size:1.28em;letter-spacing:-.01em}
+.brand-word{color:var(--accent);font-weight:700;font-size:1.28em;letter-spacing:-.01em;text-transform:lowercase}
 [data-theme="dark"] .brand-word{color:var(--lime)}
 
 /* ---------- Yapay zeka yönetişim metin blokları ---------- */
@@ -486,6 +488,12 @@ h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,'Segoe UI','Liberation 
 
 /* ---------- Sayfa başlığı (iç sayfalar) ---------- */
 .page-hero{padding:72px 0 56px;border-bottom:1px solid var(--border);background:var(--hero-glow)}
+/* Hakkımızda hero: mor logo + başlık yan yana */
+.about-hero-inner{display:flex;align-items:center;gap:56px}
+.about-hero-text{flex:1;min-width:0}
+.about-logo{width:230px;height:auto;flex:none}
+@media (max-width:768px){.about-hero-inner{gap:32px}.about-logo{width:150px}}
+@media (max-width:520px){.about-hero-inner{flex-direction:column;align-items:flex-start;gap:28px}.about-logo{width:120px;align-self:center}}
 /* Kişisel faydalar: başlık + video yan yana */
 .hero-split{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
 .hero-video video{width:100%;display:block;border-radius:14px;border:1px solid var(--border);box-shadow:var(--card-shadow)}

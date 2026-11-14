@@ -3,13 +3,13 @@
 window.OPUNTA_I18N = {
 en: {
   /* ---- Ortak ---- */
-  "nav.home": "Enterprise Browser",
-  "nav.about": "About Our Company",
-  "nav.personal": "Personal Benefits",
-  "nav.corp": "Enterprise Benefits",
-  "nav.ai": "AI Governance",
-  "nav.tech": "Technical Specifications",
-  "nav.contact": "Contact Us",
+  "nav.home": "Secure Internet Browser",
+  "nav.about": "Company, Vision, About Us",
+  "nav.personal": "Benefits for Employees",
+  "nav.corp": "Benefits for Organizations",
+  "nav.ai": "AI Security & Governance",
+  "nav.tech": "Products & Technical Features",
+  "nav.contact": "Information Society Services",
   "ai.title": "End-to-End Control in AI Usage",
   "ai.lead": "From usage to audit, every interaction is managed in four stages and becomes traceable.",
   "ai.intro.title": "Make AI Use Visible, Manageable and Auditable",
@@ -61,7 +61,7 @@ en: {
   "ai.fw.p": 'AI governance does not consist of product functions alone. The organization\'s roles and responsibilities, risk assessment, recording policy, employee training, incident review procedure and continuous improvement approach are also required. <span class="brand-word">opunta</span> supports the technical control and recording layer of this model for usage that takes place through the browser.',
   "ai.fw.h1": "Framework / Source",
   "ai.fw.h2": "Expectation for the organization",
-  "ai.fw.h3": "Relation to opunta and its limit",
+  "ai.fw.h3": "Relation to <span class='brand-word'>opunta</span> and its limit",
   "ai.fw.r1a": "ISO/IEC 42001",
   "ai.fw.r1b": "AI management system, policy, risk management, responsibility and continuous improvement.",
   "ai.fw.r1c": "Supports traceable usage and policy enforcement",
@@ -107,7 +107,7 @@ en: {
   "ai.b7t": "AI Governance Is a Living Process",
   "ai.b7p1": 'AI technologies, usage habits, threats and regulatory expectations are constantly changing. That is why the AI governance capabilities of <span class="brand-word">opunta</span> are not limited to current functions — they continue to evolve with the contribution of cybersecurity and IT law experts, in line with current needs, IT law requirements and emerging risks.',
   "footer.tag": "Secure Enterprise Browser & AI Governance Platform",
-  "footer.copy": "© 2026 opunta — Modern Cybersecurity. All rights reserved.",
+  "footer.copy": "© 2026 <span class='brand-word'>opunta</span> — Modern Cybersecurity. All rights reserved.",
   "common.learnMore": "Learn more",
   "common.closeDetail": "Click to collapse",
 
@@ -117,9 +117,9 @@ en: {
   "home.cta1": 'Why an Organization Should Use the <span class="btn-brand">opunta</span> Browser',
   "home.cta2": 'Why an Employee Should Use the <span class="btn-brand">opunta</span> Browser',
   "home.show.p.t": "Personal Benefits",
-  "home.show.p.d": 'The <span class="hl2">opunta browser</span> works without interrupting your work experience. It limits corporate documents, customer information, trade secrets and sensitive content from leaving the organization unnoticed through AI usage.',
+  "home.show.p.d": 'The <span class="hl2">opunta browser</span> works without interrupting your work experience. A seemingly harmless extension can read your passwords, a fake link can hijack your session, the private information you type into AI tools can be leaked or misused, the <span class="brand-word">opunta</span> browser stops these risks before you even notice.',
   "home.show.c.t": "Enterprise Benefits",
-  "home.show.c.d": 'The <span class="hl2">opunta browser</span> manages the risks arising from internet and AI usage through centralized policies while preserving employee productivity. It limits corporate documents, customer information, trade secrets and sensitive content from silently leaving the organization through web applications or AI tools. It makes AI usage visible, auditable and governable under corporate policies.',
+  "home.show.c.d": 'The <span class="hl2">opunta browser</span> manages the risks arising from internet and AI usage through centralized policies while preserving employee productivity. It limits corporate documents, customer information, trade secrets and sensitive content from silently leaving the organization through AI tools. It makes AI usage visible, auditable and governable under corporate policies.',
 
   "home.env.title": "The browser is now the new operating system",
   "home.env.p1": "The browser is no longer just a window to the internet. The applications employees use throughout the day, corporate information and digital services all run on this layer.",
@@ -128,7 +128,7 @@ en: {
 
   /* ---- Hakkımızda ---- */
   "about.title": "About Us",
-  "about.lead": '<span class="brand-lime">opunta,</span> A technology venture that continuously analyzes evolving threats, develops modern defense solutions for the digital security needs of organizations and users, and combines agility with corporate discipline.',
+  "about.lead": '<span class="brand-word">opunta</span>, a technology venture that continuously analyzes evolving threats, develops modern defense solutions for the digital security needs of organizations and users, and combines agility with corporate discipline.',
 
   "about.story.eyebrow": "Brand Story",
   "about.story.title": "Purple Opuntia",
@@ -139,14 +139,14 @@ en: {
   "about.founders.eyebrow": "Founders",
   "about.f1.name": "Tolga T. Tuncer",
   "about.f1.role": "Founder · CEO",
-  "about.f1.p1": "Tolga is a strong leader who guides opunta's vision by combining deep technical knowledge with strategic project development, entrepreneurship and executive experience.",
+  "about.f1.p1": "Tolga is a strong leader who guides <span class='brand-word'>opunta</span>'s vision by combining deep technical knowledge with strategic project development, entrepreneurship and executive experience.",
   "about.f1.p2": "Throughout his career he held critical roles — Public Sector Sales Manager at Microsoft, Strategic Projects Sales Director at GE Healthcare and Regional Sales Manager at UiPath — blending marketing, sales, government relations and international company experience.",
-  "about.f1.p3": "He founded his first venture, One Dose Health, and led it as CEO for four years. His entrepreneurial record in digital health includes serving a user base of 500,000, bringing Türkiye the world's first JCI accreditation in digital health, and completing the journey with a successful exit — after which he carried his technology and entrepreneurship experience into opunta.",
+  "about.f1.p3": "He founded his first venture, One Dose Health, and led it as CEO for four years. His entrepreneurial record in digital health includes serving a user base of 500,000, bringing Türkiye the world's first JCI accreditation in digital health, and completing the journey with a successful exit — after which he carried his technology and entrepreneurship experience into <span class='brand-word'>opunta</span>.",
   "about.f1.p4": "He holds a bachelor's degree in Computer Engineering, completed a master's degree in Information Technology Law at Istanbul Bilgi University, and continues his doctoral (PhD) studies in Business Administration at Başkent University.",
   "about.f1.p5": "He also contributes to the ecosystem as a Board Member of the Turkish Informatics Association (TBD), and maintains strong strategic command of Artificial Intelligence (AI), Robotic Process Automation (RPA), cloud computing architectures, cybersecurity and data privacy.",
   "about.f2.name": "Semih Eskin",
   "about.f2.role": "Founder · CTO",
-  "about.f2.p1": "Semih is the technical co-founder who builds opunta's technology infrastructure to modern, secure and scalable standards and shapes its enterprise solutions.",
+  "about.f2.p1": "Semih is the technical co-founder who builds <span class='brand-word'>opunta</span>'s technology infrastructure to modern, secure and scalable standards and shapes its enterprise solutions.",
   "about.f2.p2": "His journey with computers began with the Commodore 64 his family gifted him in childhood, continued as he started learning the C programming language in middle school, and turned into a professional career through a computer engineering education.",
   "about.f2.p3": "He served as Principal Technology Strategist in Everpure's Global Strategy and Solutions team, gaining comprehensive leadership experience in shaping technology strategies, future vision and technology roadmaps on a global scale.",
   "about.f2.p4": "During his 10-year career at Microsoft, he took on critical roles such as enterprise application development consulting and software architecture, and delivered projects in Data & AI as a Cloud Solution Architect.",
@@ -178,8 +178,7 @@ en: {
 /* ---- Kişisel Faydalar ---- */
 Object.assign(window.OPUNTA_I18N.en, {
   "personal.title": 'Why Should I Use the <span class="brand-word">opunta</span> Browser?',
-  "personal.lead1": 'The <span class="brand-word">opunta</span> browser works without interrupting your work experience.',
-  "personal.lead2": "It limits corporate documents, customer information, trade secrets and sensitive content from leaving the organization unnoticed through AI usage.",
+  "personal.lead1": 'The <span class="brand-word">opunta</span> browser works without interrupting your work experience. A seemingly harmless extension can read your passwords, a fake link can hijack your session, the private information you type into AI tools can be leaked or misused, the <span class="brand-word">opunta</span> browser stops these risks before you even notice.',
 
   "personal.s1.eyebrow": "The app you use most on your computer:",
   "personal.s1.title": "How secure is your browser?",
@@ -236,17 +235,17 @@ Object.assign(window.OPUNTA_I18N.en, {
   "corp.kvkk.p1": "According to the Turkish Personal Data Protection Board's decision dated 9 January 2025, in an attack on a restaurant chain, malware running through the browser on an employee's computer accessed the usernames and passwords stored in the browser. The seized credentials were used to gain unauthorized access to the company system, affecting the personal data of 505,337 customers. The Board ordered a total administrative fine of 1,000,000 TRY due to deficiencies in security and monitoring controls and the failure to fulfil notification obligations.",
   "corp.kvkk.p2": "This case cannot be explained by the fine alone. Customer trust, public perception, incident response costs and corporate responsibility must each be assessed separately. The incident also shows that browser security alone is not sufficient — it must be addressed together with multi-factor authentication, monitoring, training and other fundamental controls.",
 
-  "corp.gain.title": "What Does an Enterprise Browser Bring to the Organization?",
-  "corp.gain.i1t": "More tangible control over corporate information",
-  "corp.gain.i1p": "Customer lists, policies, contracts, financial reports, technical drawings, source code and trade secrets can leave the organization through misdirected uploads, copying, downloads or unauthorized access. Policies enforced at the browser layer provide visibility into such actions and limit sharing in appropriate scenarios.",
-  "corp.gain.i2t": "The opportunity to contain a breach before it grows",
-  "corp.gain.i2p": "Suspicious links, risky extensions, credential theft and uncontrolled web sessions can be the first step toward critical systems. An enterprise browser does not prevent every attack on its own, but strengthens the defense line by adding controls in the environment where user actions take place.",
-  "corp.gain.i3t": "Banning is not the solution",
-  "corp.gain.i3p": "The goal is not to stop every connection or to ban AI. Policies designed around the organization's risk appetite focus on high-risk actions while preserving the normal workflow as much as possible. A successful transition depends on the balance struck between user experience and security.",
-  "corp.gain.i4t": "Managing costs before the incident, not only after",
-  "corp.gain.i4p": "Breach response, business loss, customer communication, external consultancy, forensics and reputational costs. These items often go far beyond a single technical vulnerability. The enterprise browser decision should therefore be evaluated not only by license cost, but also by its risk reduction and business continuity impact.",
-  "corp.gain.i5t": "A say in the organization's technology choices",
-  "corp.gain.i5p": "Which user groups can perform which actions and how sensitive information is handled should be a matter of corporate policy. This is the core benefit of lifting the browser choice above the level of individual habit.",
+  "corp.gain.title": "What Does the <span class='brand-word'>opunta</span> Internet Browser Offer Organizations?",
+  "corp.gain.i1t": "Offers more tangible control over corporate information.",
+  "corp.gain.i1p": "Customer lists, policies, contracts, financial reports, technical drawings, source code and trade secrets can leave the organization through misdirected uploads, copying, downloads or unauthorized access. Policies that can be enforced with <span class='brand-word'>opunta</span> provide visibility into such actions and restrict sharing in appropriate scenarios.",
+  "corp.gain.i2t": "Offers the ability to contain breach impact before it grows.",
+  "corp.gain.i2p": "Suspicious links, risky extensions, credential theft and uncontrolled web sessions can be the first step toward critical systems. <span class='brand-word'>opunta</span> strengthens the line of defense by adding control in the browser environment where work processes and transactions take place.",
+  "corp.gain.i3t": "Takes banning off the table and offers a productive way of working.",
+  "corp.gain.i3p": "The goal is not to stop every connection or to ban AI. Thanks to policies offered on the <span class='brand-word'>opunta</span> platform that can be designed around your organization's risk appetite, workflows on browser and AI screens are preserved as much as possible while it remains possible to focus on high-risk actions. A successful transition depends on the balance struck between productivity and security.",
+  "corp.gain.i4t": "Offers the ability to manage costs not only after an incident, but before one.",
+  "corp.gain.i4p": "Breach response, business loss, customer communication, external consultancy, forensics and reputational costs. These items often go far beyond a single technical vulnerability. The decision to adopt the secure internet browser offered by <span class='brand-word'>opunta</span> should therefore be evaluated not only by license cost, but also by its risk reduction and business continuity impact.",
+  "corp.gain.i5t": "Gives organizations a say over the internet browser.",
+  "corp.gain.i5p": "Which user groups can perform which actions and how sensitive information on the internet browser is handled should be a matter of corporate policy. Browser choice should be lifted above the level of individual habit. <span class='brand-word'>opunta</span> provides the mechanisms to strengthen your line of defense.",
 
   "corp.ai.title": "AI usage makes this need even more important",
   "corp.ai.p1": "Today, employees have AI tools summarize reports, interpret contracts, draft customer emails, write code and analyze spreadsheets. While these actions create value, they sometimes cause corporate information to be sent outside the organization without anyone noticing.",
@@ -278,16 +277,16 @@ Object.assign(window.OPUNTA_I18N.en, {
   "corp.layer.title": "User License & Package Components",
   "corp.layer.lead": "Three components arrive in a single installation package and under a single identity.",
 
-  "corp.bear.tag": "Secure Enterprise Browser",
+  "corp.bear.tag": "<span class='brand-word'>opunta</span> Internet Browser",
   "corp.bear.os": "Windows and macOS compatible",
   "corp.bear.p": "The secure enterprise browser where corporate policies are enforced.",
   "corp.bear.t1": "The browser is not a bystander but the point where policy is enforced, there is no unprotected mode to fall back into.",
 
-  "corp.ext.tag": "Browser Extension",
+  "corp.ext.tag": "<span class='brand-word'>opunta</span> Extension",
   "corp.ext.os": 'Compatible with Google Chrome and <span class="brand-word">opunta</span> Browser',
-  "corp.ext.p": "AI conversation governance right where it happens — inside the chat screen. Edge, Firefox and Safari support coming soon.",
+  "corp.ext.p": "The <span class='brand-word'>opunta</span> extension makes browsers you cannot manage manageable and observable, and offers governance capabilities right on the AI chat screen. Edge, Firefox and Safari support coming soon.",
 
-  "corp.agent.tag": "Endpoint Service",
+  "corp.agent.tag": "<span class='brand-word'>opunta</span> Endpoint Service",
   "corp.agent.os": "Windows and macOS compatible",
   "corp.agent.p": "The decision engine and protection service running on the device.",
 
@@ -295,17 +294,17 @@ Object.assign(window.OPUNTA_I18N.en, {
   "corp.lc.title": "Observe · Decide · Govern · Prove",
   "corp.lc.lead": "Four stages every AI interaction passes through",
   "home.lc.s1t": 'OBSERVE',
-  "home.lc.s1d": "Every AI interaction — prompt, response and attached files — becomes visible in a single round, in readable form.",
+  "home.lc.s1d": "<span class='brand-word'>opunta</span> makes the prompt, response and attached files of every AI interaction visible in a single round, in readable form.",
   "home.lc.s2t": 'DECIDE',
-  "home.lc.s2d": "The decision is made before sending, on the device itself. If opunta services do not respond, the send is halted.",
+  "home.lc.s2d": "<span class='brand-word'>opunta</span> makes the decision before sending, on the device itself, if services do not respond, the send is halted.",
   "home.lc.s3t": 'GOVERN',
-  "home.lc.s3d": "Instead of banning: warn, ask for justification, redact, grant time-boxed access.",
+  "home.lc.s3d": "<span class='brand-word'>opunta</span> warns instead of banning, asks for justification, redacts, grants time-boxed access.",
   "home.lc.s4t": 'PROVE',
-  "home.lc.s4d": "Sealed record retention: who opened what and when — audit-ready evidence and infrastructure that supports compliance work.",
+  "home.lc.s4d": "<span class='brand-word'>opunta</span> creates and keeps sealed records. Who opened what and when is presented with audit-ready evidence, in a structure that supports compliance work.",
 
-  "corp.ct.eyebrow": "opunta Control Tower",
+  "corp.ct.eyebrow": "<span class='brand-word'>opunta</span> Control Tower",
   "corp.ct.title": "Central Management Console & Technical Specifications",
-  "corp.ct.lead": "Eight modules turn browser and AI activity into visible, manageable and auditable enterprise telemetry. Central policies, records and auditing stay on your infrastructure, under your control.",
+  "corp.ct.lead": "The eight modules <span class='brand-word'>opunta</span> offers turn browser and AI activity into visible, manageable and auditable enterprise telemetry. Central policies, records and auditing stay on your infrastructure, under your control.",
 
   "corp.t1t": "Central Policy",
   "corp.t2t": "Sealed Audit Records",
@@ -351,7 +350,7 @@ Object.assign(window.OPUNTA_I18N.en, {
   "corp.sov.pricing": "The deployment model is reflected in license pricing, cloud-based tenant deployments can be supported remotely and continuously, while Air-Gap installations may require on-site service.",
 
   "corp.cta.title": "See it on your own infrastructure — and test it.",
-  "corp.cta.p": "Tell us about your environment and needs, and let us introduce the opunta platform to you.",
+  "corp.cta.p": "Tell us about your environment and needs, and let us introduce the <span class='brand-word'>opunta</span> platform to you.",
   "corp.cta.btn": "Contact Us"
 });
 
@@ -386,7 +385,7 @@ Object.assign(window.OPUNTA_I18N.en, {
 Object.assign(window.OPUNTA_I18N.en, {
   "corp.bear.list":
     '<li><strong>Policy-Enforced Browser</strong> — Site, extension, cookie and download policies are enforced inside the browser.</li>' +
-    '<li><strong>Fail-Closed</strong> — The browser does not open unless opunta services are active and up to date.</li>' +
+    '<li><strong>Fail-Closed</strong> — The browser does not open unless <span class="brand-word">opunta</span> services are active and up to date.</li>' +
     '<li><strong>Single Identity</strong> — The session lives in user services, no content rules or session data are kept in the browser.</li>' +
     '<li><strong>URL Blocking</strong> — Risky or unwanted web addresses are blocked by central policy.</li>' +
     '<li><strong>Extension Blocklist</strong> — Installation and execution of unauthorized browser extensions are blocked.</li>' +

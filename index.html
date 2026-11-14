@@ -3,14 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>opunta — Kurumsal İnternet Tarayıcı ve Yapay Zeka Yönetişim Platformu</title>
-<meta name="description" content="opunta: Kurumsal internet tarayıcı ve yapay zeka yönetişim platformu. Politika uygulayan güvenli tarayıcı, yapay zeka kullanım denetimi ve sizin altyapınızda çalışan denetim kulesi.">
+<title>opunta — Güvenli İnternet Tarayıcı ve Yapay Zeka Yönetişim Platformu</title>
+<meta name="description" content="opunta: Güvenli internet tarayıcı ve yapay zeka yönetişim platformu. Politika uygulayan güvenli internet tarayıcı, yapay zeka kullanım denetimi ve sizin altyapınızda çalışan denetim kulesi.">
 <link rel="icon" type="image/png" href="assets/img/logo-light.png">
 <script>
 /* Tema seçimini boyamadan önce uygula (FOUC önlemi) */
 (function(){try{var t=localStorage.getItem("opunta-theme");if(t){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();
 </script>
 <link rel="stylesheet" href="assets/css/styles.css">
+
+<link rel="stylesheet" href="assets/css/theme-images.css">
 </head>
 <body class="has-hero">
 
@@ -22,13 +24,13 @@
       <span class="wordmark">opunta</span>
     </a>
     <nav class="main-nav" id="main-nav" aria-label="Ana menü">
-      <a href="#/" data-i18n="nav.home">Kurumsal Tarayıcı</a>
-      <a href="#/kisisel-faydalar" data-i18n="nav.personal">Kişisel Faydalar</a>
-      <a href="#/kurumsal-faydalar" data-i18n="nav.corp">Kurumsal Faydalar</a>
-      <a href="#/yapay-zeka-yonetisim" data-i18n="nav.ai">Yapay Zeka Yönetişimi</a>
-      <a href="#/teknik-ozellikler" data-i18n="nav.tech">Teknik Özellikler</a>
-      <a href="#/hakkimizda" data-i18n="nav.about">Şirketimiz Hakkında</a>
-      <a href="#/iletisim" data-i18n="nav.contact">Bize Ulaşın İletişim</a>
+      <a href="#/" data-i18n="nav.home">Güvenli <br>İnternet <br>Tarayıcı</a>
+      <a href="#/kisisel-faydalar" data-i18n="nav.personal">Çalışanlar <br>İçin <br>Faydalar</a>
+      <a href="#/kurumsal-faydalar" data-i18n="nav.corp">Kurumlar <br>İçin <br>Faydalar</a>
+      <a href="#/yapay-zeka-yonetisim" data-i18n="nav.ai">Yapay Zeka <br>Güvenliği ve <br>Yönetişimi</a>
+      <a href="#/teknik-ozellikler" data-i18n="nav.tech">Ürünlerimiz <br>ve Teknik <br>Özellikler</a>
+      <a href="#/hakkimizda" data-i18n="nav.about">Şirketimiz <br>Vizyonumuz <br>Hakkımızda</a>
+      <a href="#/iletisim" data-i18n="nav.contact">Bilgi <br>Toplumu <br>Hizmetleri</a>
     </nav>
     <div class="header-tools">
       <button id="lang-toggle" class="switch" type="button" role="switch" aria-checked="false" title="Switch to English">
@@ -47,23 +49,21 @@
     </div>
   </div>
 </header>
-<div class="page-view" id="page-index" data-route="index" hidden>
+<script src="assets/js/router.js"></script>
+<div class="page-view" id="page-index" data-route="index">
 <main>
   <!-- HERO — tam ekran görsel -->
   <section class="hero-full">
-    <img class="hero-bg" src="assets/img/hero.webp" alt="" width="2048" height="1152" fetchpriority="high">
+    <img class="hero-bg bg-dark" src="assets/img/hero-dark.webp" alt="" width="2048" height="1152" fetchpriority="high">
+    <img class="hero-bg bg-day" src="assets/img/hero-day.webp" alt="" width="2048" height="1152" fetchpriority="low" aria-hidden="true">
     <div class="hero-scrim" aria-hidden="true"></div>
     <div class="streak-layer" aria-hidden="true"></div>
     <div class="container hero-content">
-      <h1 class="hero-title reveal" data-i18n-html="home.title">Kurumsal İnternet Tarayıcı ve<br><span class="hl">Yapay Zeka Yönetişim</span><br><span class="hl3">Platformu</span></h1>
+      <h1 class="hero-title reveal" data-i18n-html="home.title">Güvenli İnternet Tarayıcı ve<br><span class="hl">Yapay Zeka Yönetişim</span><br><span class="hl3">Platformu</span></h1>
       <div class="hero-sub reveal" data-i18n-html="home.sub">
-        <p>Günümüzde çalışma saatlerinin büyük bölümünde tarayıcılar ekranlarımızda açık kalıyor ve aktif olarak kullanılıyor. Kurumsal uygulamalar, dokümanlar, yazışmalar, internet tabanlı servisler ve yapay zekâ araçları giderek daha fazla aynı çalışma yüzeyinde buluşuyor.</p>
-        <p>Bu dönüşüm, tarayıcıyı yalnızca internete erişim sağlayan bir araç olmaktan çıkararak kurumların en kritik çalışma katmanlarından biri hâline getiriyor.</p>
-        <p>Kurumsal internet tarayıcılar, bu kritik katmanı yönetilebilir hâle getirerek yeni nesil çalışma ortamının tehditlere karşı savunulmasını sağlıyor.</p>
-      </div>
-      <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#/kurumsal-faydalar" data-i18n-html="home.cta1">Bir Kurum Neden <span class="btn-brand">opunta</span> Tarayıcı Kullanmalı</a>
-        <a class="btn btn-primary" href="#/kisisel-faydalar" data-i18n-html="home.cta2">Bir Çalışan Neden <span class="btn-brand">opunta</span> Tarayıcı Kullanmalı</a>
+        <p>Günümüzde çalışma saatlerinin büyük bölümünde internet tarayıcılar ekranlarımızda açık kalıyor ve aktif olarak kullanılıyor. Kurumsal uygulamalar, dokümanlar, yazışmalar, internet tabanlı servisler ve yapay zekâ araçları giderek daha fazla aynı çalışma yüzeyinde buluşuyor.</p>
+        <p>Bu dönüşüm, internet tarayıcıyı yalnızca internete erişim sağlayan bir araç olmaktan çıkararak kurumların en kritik çalışma katmanlarından biri hâline getiriyor.</p>
+        <p>Güvenli internet tarayıcılar, bu kritik katmanı yönetilebilir hâle getirerek yeni nesil çalışma ortamının tehditlere karşı savunulmasını sağlıyor.</p>
       </div>
     </div>
   </section>
@@ -72,11 +72,12 @@
   <section class="showcase">
     <div class="container">
       <div class="showcase-card reveal">
-        <img src="assets/img/showcase-personal.webp" alt="Şeffaf mor koruma kubbesi altında evinde dizüstü bilgisayarıyla rahatça çalışan bir kişi" width="2560" height="1440" loading="lazy">
+        <img class="bg-dark" src="assets/img/showcase-personal-dark.webp" alt="Şeffaf mor koruma kubbesi altında evinde dizüstü bilgisayarıyla rahatça çalışan bir kişi" width="2560" height="1440" loading="lazy">
+        <img class="bg-day" src="assets/img/showcase-personal-day.webp" alt="" width="2560" height="1440" loading="lazy" aria-hidden="true">
         <div class="streak-layer" aria-hidden="true"></div>
         <div class="showcase-overlay">
           <h2 class="showcase-title" data-i18n="home.show.p.t">Kişisel Faydalar</h2>
-          <p class="showcase-lead" data-i18n-html="home.show.p.d"><span class="hl2">opunta tarayıcı</span> çalışma deneyiminizi kesintiye uğratmaz. Kuruma ait belgelerin, müşteri bilgilerinin, ticari sırların ve hassas içeriklerin yapay zekâ kullanımı üzerinden fark edilmeden kurum dışına çıkmasını sınırlar.</p>
+          <p class="showcase-lead" data-i18n-html="home.show.p.d"><span class="hl2">opunta internet tarayıcı</span> çalışma deneyiminizi kesintiye uğratmaz. Masum görünen bir eklenti parolalarınızı okuyabilir, sahte bir bağlantı oturumunuzu ele geçirebilir, yapay zekâ araçlarına yazdığınız özel bilgileriniz sızdırılabilir ya da suistimal edilebilir, <span class="brand-word">opunta</span> internet tarayıcı bu riskleri siz fark etmeden engeller.</p>
           <a class="btn btn-light" href="#/kisisel-faydalar" data-i18n="common.learnMore">Daha fazla bilgi</a>
         </div>
       </div>
@@ -87,27 +88,28 @@
   <section class="showcase">
     <div class="container">
       <div class="showcase-card reveal">
-        <img src="assets/img/showcase-corporate.webp" alt="Şeffaf mor koruma kubbesi altında çalışan modern bir ofis ekibi" width="2560" height="1440" loading="lazy">
+        <img class="bg-dark" src="assets/img/showcase-corporate-dark.webp" alt="Şeffaf mor koruma kubbesi altında gece mesaisinde çalışan modern bir ofis ekibi" width="2560" height="1440" loading="lazy">
+        <img class="bg-day" src="assets/img/showcase-corporate-day.webp" alt="Şeffaf mor koruma kubbesi altında çalışan modern bir ofis ekibi" width="2560" height="1440" loading="lazy" aria-hidden="true">
         <div class="streak-layer" aria-hidden="true"></div>
         <div class="showcase-overlay">
           <h2 class="showcase-title" data-i18n="home.show.c.t">Kurumsal Faydalar</h2>
-          <p class="showcase-lead" data-i18n-html="home.show.c.d"><span class="hl2">opunta tarayıcı</span>, internet ve yapay zekâ kullanımından kaynaklanan riskleri merkezi politikalarla yönetirken çalışanların üretkenliğini korur. Kuruma ait belgelerin, müşteri bilgilerinin, ticari sırların ve hassas içeriklerin web uygulamaları veya yapay zekâ araçları üzerinden fark edilmeden kurum dışına çıkmasını sınırlar. Yapay zekâ kullanımını görünür, denetlenebilir ve kurum politikalarıyla yönetilebilir hâle getirir.</p>
+          <p class="showcase-lead" data-i18n-html="home.show.c.d"><span class="hl2">opunta internet tarayıcı</span>, internet ve yapay zekâ kullanımından kaynaklanan riskleri merkezi politikalarla yönetirken çalışanların üretkenliğini korur. Kuruma ait belgelerin, müşteri bilgilerinin, ticari sırların ve hassas içeriklerin yapay zekâ araçları üzerinden fark edilmeden kurum dışına çıkmasını sınırlar. Yapay zekâ kullanımını görünür, denetlenebilir ve kurum politikalarıyla yönetilebilir hâle getirir.</p>
           <a class="btn btn-light" href="#/kurumsal-faydalar" data-i18n="common.learnMore">Daha fazla bilgi</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TARAYICI: YENİ İŞLETİM SİSTEMİ -->
+  <!-- İNTERNET TARAYICI: YENİ İŞLETİM SİSTEMİ -->
   <section class="section">
     <div class="container">
       <div class="section-head reveal">
-        <h2 class="section-title oneline" data-i18n="home.env.title">Tarayıcı artık yeni işletim sistemidir</h2>
+        <h2 class="section-title oneline" data-i18n="home.env.title">İnternet Tarayıcı artık yeni işletim sistemidir</h2>
       </div>
       <div class="prose reveal">
-        <p data-i18n="home.env.p1">Tarayıcı artık yalnızca internete açılan bir pencere değildir. Çalışanların gün boyunca kullandığı uygulamalar, kurumsal bilgiler ve dijital hizmetler bu katman üzerinden çalışmaktadır.</p>
-        <p data-i18n="home.env.p2">Buna rağmen birçok kurum, tarayıcıyı hâlâ cihazla birlikte gelen standart bir uygulama veya bireysel kullanıcı tercihi olarak görmektedir.</p>
-        <p data-i18n="home.env.p3">Oysa tarayıcı seçimi artık bundan çok daha fazlasıdır. Kurumun dijital çalışma mimarisini, bilgi güvenliğini ve veri egemenliğini doğrudan etkileyen stratejik bir teknoloji kararıdır.</p>
+        <p data-i18n="home.env.p1">İnternet Tarayıcı artık yalnızca internete açılan bir pencere değildir. Çalışanların gün boyunca kullandığı uygulamalar, kurumsal bilgiler ve dijital hizmetler bu katman üzerinden çalışmaktadır.</p>
+        <p data-i18n="home.env.p2">Buna rağmen birçok kurum, internet tarayıcıyı hâlâ cihazla birlikte gelen standart bir uygulama veya bireysel kullanıcı tercihi olarak görmektedir.</p>
+        <p data-i18n="home.env.p3">Oysa internet tarayıcı seçimi artık bundan çok daha fazlasıdır. Kurumun dijital çalışma mimarisini, bilgi güvenliğini ve veri egemenliğini doğrudan etkileyen stratejik bir teknoloji kararıdır.</p>
       </div>
     </div>
   </section>
@@ -118,14 +120,11 @@
   <section class="page-hero">
     <div class="container hero-split">
       <div>
-        <h1 data-i18n-html="personal.title">Neden <span class="brand-word">opunta</span> Tarayıcı Kullanmalıyım?</h1>
-        <p class="lead" data-i18n-html="personal.lead1"><span class="brand-word">opunta</span> tarayıcı, çalışma deneyiminizi kesintiye uğratmaz.</p>
-        <p class="lead" data-i18n="personal.lead2">Kuruma ait belgelerin, müşteri bilgilerinin, ticari sırların ve hassas içeriklerin yapay zekâ kullanımı üzerinden fark edilmeden kurum dışına çıkmasını sınırlar.</p>
+        <h1 data-i18n-html="personal.title">Neden <span class="brand-word">opunta</span> İnternet Tarayıcı Kullanmalıyım?</h1>
+        <p class="lead" data-i18n-html="personal.lead1"><span class="brand-word">opunta</span> internet tarayıcı çalışma deneyiminizi kesintiye uğratmaz. Masum görünen bir eklenti parolalarınızı okuyabilir, sahte bir bağlantı oturumunuzu ele geçirebilir, yapay zekâ araçlarına yazdığınız özel bilgileriniz sızdırılabilir ya da suistimal edilebilir, <span class="brand-word">opunta</span> internet tarayıcı bu riskleri siz fark etmeden engeller.</p>
       </div>
       <div class="hero-video reveal">
-        <video controls preload="metadata" playsinline poster="assets/video/personal-poster.jpg">
-          <source src="assets/video/personal.mp4" type="video/mp4">
-        </video>
+        <video controls preload="metadata" playsinline data-src-key="film" poster="assets/video/personal-poster.jpg"></video>
       </div>
     </div>
   </section>
@@ -135,11 +134,11 @@
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow" data-i18n="personal.s1.eyebrow">Bilgisayarınızda en çok kullandığınız uygulama:</p>
-        <h2 class="section-title" data-i18n="personal.s1.title">Tarayıcınız ne kadar güvenli?</h2>
+        <h2 class="section-title" data-i18n="personal.s1.title">İnternet Tarayıcınız ne kadar güvenli?</h2>
       </div>
       <div class="prose">
-        <p class="reveal" data-i18n="personal.s1.p1">İş gününüzü düşünün: e-posta, dokümanlar, CRM, ERP, kurumsal yazılımlar, görüntülü toplantılar, bankacılık işlemleri ve yapay zekâ asistanları… Günlük işlerimizin büyük bölümü artık tarayıcı sekmeleri üzerinden yürütülüyor. Bilgisayar kullanan tüm çalışanlar için tarayıcı, farkında olmadan yeni işletim sistemine dönüştü. Tarayıcı artık en sık kullanılan uygulama, en uzun süre açık kalan ekran.</p>
-        <p class="reveal" data-i18n="personal.s1.p2">Bu yoğun kullanım, tarayıcıyı saldırganlar ve kullanıcı bilgilerini toplayan üçüncü taraflar için de değerli bir hedef hâline getiriyor. Parolalardan açılan dokümanlara, ziyaret edilen sitelerden yapay zekâ araçlarına yazılan içeriklere kadar pek çok hassas bilgi gün boyunca tarayıcı üzerinden geçiyor. Bu nedenle kullandığınız tarayıcı artık yalnızca internete açılan bir araç değil, dijital mahremiyetin ve kurumsal verilerin korunmasında kritik bir katman.</p>
+        <p class="reveal" data-i18n="personal.s1.p1">İş gününüzü düşünün: e-posta, dokümanlar, CRM, ERP, kurumsal yazılımlar, görüntülü toplantılar, bankacılık işlemleri ve yapay zekâ asistanları… Günlük işlerimizin büyük bölümü artık internet tarayıcı sekmeleri üzerinden yürütülüyor. Bilgisayar kullanan tüm çalışanlar için internet tarayıcı, farkında olmadan yeni işletim sistemine dönüştü. İnternet Tarayıcı artık en sık kullanılan uygulama, en uzun süre açık kalan ekran.</p>
+        <p class="reveal" data-i18n="personal.s1.p2">Bu yoğun kullanım, internet tarayıcıyı saldırganlar ve kullanıcı bilgilerini toplayan üçüncü taraflar için de değerli bir hedef hâline getiriyor. Parolalardan açılan dokümanlara, ziyaret edilen sitelerden yapay zekâ araçlarına yazılan içeriklere kadar pek çok hassas bilgi gün boyunca internet tarayıcı üzerinden geçiyor. Bu nedenle kullandığınız internet tarayıcı artık yalnızca internete açılan bir araç değil, dijital mahremiyetin ve kurumsal verilerin korunmasında kritik bir katman.</p>
       </div>
     </div>
   </section>
@@ -149,12 +148,12 @@
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow" data-i18n="personal.s2.eyebrow">Tehdit Görünümü</p>
-        <h2 class="section-title" data-i18n="personal.s2.title">Saldırıların yeni adresi: tarayıcı</h2>
+        <h2 class="section-title" data-i18n="personal.s2.title">Saldırıların yeni adresi: internet tarayıcı</h2>
       </div>
       <div class="stat-grid cols-3">
-        <div class="stat reveal"><div class="num">%80</div><div class="lbl" data-i18n="personal.s2.s1.lbl">İnternet kullanımından kaynaklanan saldırıların %80'i son kullanıcı tarayıcılarını hedefliyor.</div><div class="meaning" data-i18n-html="personal.s2.s1.mean"><strong>Sizin için anlamı:</strong> Güvenilir görünen bir web sitesi, bağlantı veya giriş ekranı her zaman gerçekten güvenilir olmayabilir. Saldırganların hedefinde artık yalnızca bilgisayarınız değil, gün boyu kullandığınız tarayıcı oturumu da var.</div></div>
-        <div class="stat reveal"><div class="num">3.000+</div><div class="lbl" data-i18n="personal.s2.s2.lbl">Georgia Tech araştırmacıları, Chrome Web Store'daki 100 binden fazla eklentiyi inceleyerek 3.000'den fazla eklentinin kullanıcıya özgü bilgileri otomatik olarak topladığını belirledi.</div><div class="meaning" data-i18n-html="personal.s2.s2.mean"><strong>Sizin için anlamı:</strong> Tarayıcınıza eklediğiniz küçük bir yardımcı uygulama, ziyaret ettiğiniz adresler, sayfa başlıkları, cihaz bilgileri ve bazı durumlarda sayfaların içerisindeki bilgiler hakkında düşündüğünüzden daha fazla erişime sahip olabilir.</div></div>
-        <div class="stat reveal"><div class="num">200+</div><div class="lbl" data-i18n="personal.s2.s3.lbl">Aynı araştırmada 200'den fazla tarayıcı eklentisinin web sayfalarındaki hassas kullanıcı bilgilerini otomatik olarak alıp yurtdışı sunuculara gönderdiği tespit edildi.</div><div class="meaning" data-i18n-html="personal.s2.s3.mean"><strong>Sizin için anlamı:</strong> Bir web sayfasını yalnızca sizin gördüğünüzü düşünmeniz, sayfanın içeriğine başka hiçbir yazılımın erişemediği anlamına gelmeyebilir.</div></div>
+        <div class="stat reveal"><div class="num">%80</div><div class="lbl" data-i18n="personal.s2.s1.lbl">İnternet kullanımından kaynaklanan saldırıların %80'i son kullanıcı internet tarayıcılarını hedefliyor.</div><div class="meaning" data-i18n-html="personal.s2.s1.mean"><strong>Sizin için anlamı:</strong> Güvenilir görünen bir web sitesi, bağlantı veya giriş ekranı her zaman gerçekten güvenilir olmayabilir. Saldırganların hedefinde artık yalnızca bilgisayarınız değil, gün boyu kullandığınız internet tarayıcı oturumu da var.</div></div>
+        <div class="stat reveal"><div class="num">3.000+</div><div class="lbl" data-i18n="personal.s2.s2.lbl">Georgia Tech araştırmacıları, Chrome Web Store'daki 100 binden fazla eklentiyi inceleyerek 3.000'den fazla eklentinin kullanıcıya özgü bilgileri otomatik olarak topladığını belirledi.</div><div class="meaning" data-i18n-html="personal.s2.s2.mean"><strong>Sizin için anlamı:</strong> İnternet Tarayıcınıza eklediğiniz küçük bir yardımcı uygulama, ziyaret ettiğiniz adresler, sayfa başlıkları, cihaz bilgileri ve bazı durumlarda sayfaların içerisindeki bilgiler hakkında düşündüğünüzden daha fazla erişime sahip olabilir.</div></div>
+        <div class="stat reveal"><div class="num">200+</div><div class="lbl" data-i18n="personal.s2.s3.lbl">Aynı araştırmada 200'den fazla internet tarayıcı eklentisinin web sayfalarındaki hassas kullanıcı bilgilerini otomatik olarak alıp yurtdışı sunuculara gönderdiği tespit edildi.</div><div class="meaning" data-i18n-html="personal.s2.s3.mean"><strong>Sizin için anlamı:</strong> Bir web sayfasını yalnızca sizin gördüğünüzü düşünmeniz, sayfanın içeriğine başka hiçbir yazılımın erişemediği anlamına gelmeyebilir.</div></div>
       </div>
     </div>
   </section>
@@ -164,11 +163,11 @@
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow" data-i18n="personal.s3.eyebrow">Profilleme ve Mahremiyet</p>
-        <h2 class="section-title" data-i18n="personal.s3.title">Popüler tarayıcılar ne kadar güvenli?</h2>
+        <h2 class="section-title" data-i18n="personal.s3.title">Popüler internet tarayıcılar ne kadar güvenli?</h2>
       </div>
       <div class="prose">
         <p class="reveal" data-i18n="personal.s3.p1">Türkiye'de Kasım 2026 itibarıyla Chrome %78,4, Safari %13,04 pazar payına sahip. Opera, Firefox, Edge ve Yandex ile birlikte ilk altı yabancı üreticinin toplam payı %98'in üzerinde. Gün boyunca kullandığımız en önemli dijital çalışma aracının nasıl geliştirildiği, hangi bilgileri topladığı, hangi servislerle iletişim kurduğu ve hangi politikalarla yönetildiği konusunda farkındalık sahibi olmalıyız.</p>
-        <p class="reveal" data-i18n="personal.s3.p2">Bağımsız araştırmalara göre dünyada en yaygın kullanılan iki tarayıcı veri gizliliğinde en düşük puanı alıyor. Gezinti geçmişiniz, arama kalıplarınız, konumunuz ve davranışlarınız profilleniyor, paketleniyor ve gelire dönüştürülüyor.</p>
+        <p class="reveal" data-i18n="personal.s3.p2">Bağımsız araştırmalara göre dünyada en yaygın kullanılan iki internet tarayıcı veri gizliliğinde en düşük puanı alıyor. Gezinti geçmişiniz, arama kalıplarınız, konumunuz ve davranışlarınız profilleniyor, paketleniyor ve gelire dönüştürülüyor.</p>
         <p class="reveal" data-i18n="personal.s3.p3">Ziyaret ettiğiniz her site, doldurduğunuz her form, bir bağlantının üzerinde durakladığınız her an hakkınızdaki profile işleniyor. Bu profil cihazlar ve oturumlar arasında sizi takip ediyor.</p>
       </div>
     </div>
@@ -201,10 +200,10 @@
   <section class="section">
     <div class="container">
       <div class="section-head reveal">
-        <h2 class="section-title" data-i18n-html="personal.s5.title"><span class="brand-word">opunta</span> Kurumsal İnternet Tarayıcı Neyi Değiştirir?</h2>
+        <h2 class="section-title" data-i18n-html="personal.s5.title"><span class="brand-word">opunta</span> İnternet Tarayıcı Neyi Değiştirir?</h2>
       </div>
       <div class="prose">
-        <p class="reveal" data-i18n-html="personal.s5.p1"><span class="brand-word">opunta</span> tarayıcı zararlı bağlantılar, yanlış bilgi paylaşımı, riskli eklentiler ve yetkisiz erişim gibi tehditleri mümkün olduğunca arka planda yönetirken günlük çalışma deneyiminizi korumayı amaçlar.</p>
+        <p class="reveal" data-i18n-html="personal.s5.p1"><span class="brand-word">opunta</span> internet tarayıcı zararlı bağlantılar, yanlış bilgi paylaşımı, riskli eklentiler ve yetkisiz erişim gibi tehditleri mümkün olduğunca arka planda yönetirken günlük çalışma deneyiminizi korumayı amaçlar.</p>
         <p class="reveal" data-i18n="personal.s5.p2">Yapay zekâ araçlarını kullanmaya, web uygulamalarında çalışmaya ve günlük işlerinizi yapmaya devam edersiniz. Fark, bu çalışma ortamının kurumunuz tarafından belirlenen politikalarla daha görünür ve yönetilebilir hâle gelmesidir.</p>
         <p class="reveal" data-i18n="personal.s5.p3">Amaç internette daha az şey yapmanız değil, yaptığınız işi daha korunaklı bir ortamda sürdürebilmenizdir.</p>
       </div>
@@ -230,12 +229,10 @@
     <div class="container hero-split">
       <div>
         <h1 data-i18n="corp.title">Kurumsal Faydalar</h1>
-        <p class="lead" data-i18n-html="corp.lead"><span class="brand-word">opunta</span> tarayıcı, internet ve yapay zekâ kullanımından kaynaklanan riskleri merkezi politikalarla yönetirken çalışanların üretkenliğini korur. Kuruma ait belgelerin, müşteri bilgilerinin, ticari sırların ve hassas içeriklerin web uygulamaları veya yapay zekâ araçları üzerinden fark edilmeden kurum dışına çıkmasını sınırlar. Yapay zekâ kullanımını görünür, denetlenebilir ve kurum politikalarıyla yönetilebilir hâle getirir.</p>
+        <p class="lead" data-i18n-html="corp.lead"><span class="brand-word">opunta</span> internet tarayıcı, internet ve yapay zekâ kullanımından kaynaklanan riskleri merkezi politikalarla yönetirken çalışanların üretkenliğini korur. Kuruma ait belgelerin, müşteri bilgilerinin, ticari sırların ve hassas içeriklerin web uygulamaları veya yapay zekâ araçları üzerinden fark edilmeden kurum dışına çıkmasını sınırlar. Yapay zekâ kullanımını görünür, denetlenebilir ve kurum politikalarıyla yönetilebilir hâle getirir.</p>
       </div>
       <div class="hero-video reveal">
-        <video controls preload="metadata" playsinline poster="assets/video/corporate-poster.jpg">
-          <source src="assets/video/corporate.mp4" type="video/mp4">
-        </video>
+        <video controls preload="metadata" playsinline data-src-key="kurumsal" poster="assets/video/corporate-poster.jpg"></video>
       </div>
     </div>
   </section>
@@ -245,15 +242,15 @@
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow" data-i18n="corp.intro.eyebrow">Dijital Savunmanın Yeni Katmanı</p>
-        <h2 class="section-title" data-i18n="corp.intro.title">Tarayıcı artık yeni işletim sistemi.</h2>
+        <h2 class="section-title" data-i18n="corp.intro.title">İnternet Tarayıcı artık yeni işletim sistemi.</h2>
       </div>
       <div class="prose">
-        <p class="reveal" data-i18n="corp.intro.p1">Kurumsal iş yükü artık SaaS uygulamaları, iç portallar, yönetim konsolları, bankacılık sistemleri ve yapay zekâ araçları arasında büyük ölçüde tarayıcı üzerinden akıyor. Buna karşılık geleneksel güvenlik kontrollerinin önemli bölümü hâlâ tarayıcının çevresinde konumlanıyor, kullanıcı eylemleri ve yapay zekâ kullanımı yeteri kadar yönetilemiyor.</p>
-        <p class="reveal" data-i18n-html="corp.intro.p2"><span class="brand-word">opunta</span> tarayıcı, kontrolü iş süreçlerinin gerçekleştiği noktalara taşır.</p>
+        <p class="reveal" data-i18n="corp.intro.p1">Kurumsal iş yükü artık SaaS uygulamaları, iç portallar, yönetim konsolları, bankacılık sistemleri ve yapay zekâ araçları arasında büyük ölçüde internet tarayıcı üzerinden akıyor. Buna karşılık geleneksel güvenlik kontrollerinin önemli bölümü hâlâ internet tarayıcının çevresinde konumlanıyor, kullanıcı eylemleri ve yapay zekâ kullanımı yeteri kadar yönetilemiyor.</p>
+        <p class="reveal" data-i18n-html="corp.intro.p2"><span class="brand-word">opunta</span> internet tarayıcı, kontrolü iş süreçlerinin gerçekleştiği noktalara taşır.</p>
       </div>
       <div class="callout reveal" style="margin-top:32px">
         <p style="font-weight:700;font-size:19px;margin-bottom:6px" data-i18n="corp.intro.c1">En pahalı risk, varlığından haberdar olmadığınız risktir.</p>
-        <p data-i18n="corp.intro.c2">Tarayıcı üzerinde gerçekleşen işlemler artık bu kapsamın dışında kalamaz.</p>
+        <p data-i18n="corp.intro.c2">İnternet Tarayıcı üzerinde gerçekleşen işlemler artık bu kapsamın dışında kalamaz.</p>
       </div>
     </div>
   </section>
@@ -263,11 +260,11 @@
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow" data-i18n="corp.kvkk.eyebrow">KVKK Kurul Kararı 2025/88</p>
-        <h2 class="section-title" data-i18n="corp.kvkk.title">Tarayıcıda Saklanan Parolalar, 505.337 Kişiyi Etkiledi</h2>
+        <h2 class="section-title" data-i18n="corp.kvkk.title">İnternet Tarayıcıda Saklanan Parolalar, 505.337 Kişiyi Etkiledi</h2>
       </div>
       <div class="prose">
-        <p class="reveal" data-i18n="corp.kvkk.p1">Kişisel Verileri Koruma Kurulunun 9 Ocak 2025 tarihli kararına göre bir restoran zincirindeki saldırıda, çalışan bilgisayarında tarayıcı üzerinden çalışan zararlı yazılım, tarayıcıda saklanan kullanıcı adı ve parolalara erişti. Ele geçirilen bilgilerle şirket sistemine yetkisiz erişim sağlandı, 505.337 müşterinin kişisel bilgileri etkilendi. Kurul, güvenlik ve takip kontrollerindeki eksiklikler ile bildirim yükümlülüklerinin yerine getirilmemesi nedeniyle toplam 1.000.000 TL idari para cezasına karar verdi.</p>
-        <p class="reveal" data-i18n="corp.kvkk.p2">Bu vaka yalnızca para cezasıyla açıklanamaz. Müşteri güveni, kamuoyu algısı, olay müdahale maliyeti ve kurumsal sorumluluk ayrı ayrı değerlendirilmelidir. Ayrıca olay, tarayıcı güvenliğinin tek başına yeterli olmadığını, çok faktörlü doğrulama, izleme, eğitim ve diğer temel kontrollerle birlikte ele alınması gerektiğini de gösteriyor.</p>
+        <p class="reveal" data-i18n="corp.kvkk.p1">Kişisel Verileri Koruma Kurulunun 9 Ocak 2025 tarihli kararına göre bir restoran zincirindeki saldırıda, çalışan bilgisayarında internet tarayıcı üzerinden çalışan zararlı yazılım, internet tarayıcıda saklanan kullanıcı adı ve parolalara erişti. Ele geçirilen bilgilerle şirket sistemine yetkisiz erişim sağlandı, 505.337 müşterinin kişisel bilgileri etkilendi. Kurul, güvenlik ve takip kontrollerindeki eksiklikler ile bildirim yükümlülüklerinin yerine getirilmemesi nedeniyle toplam 1.000.000 TL idari para cezasına karar verdi.</p>
+        <p class="reveal" data-i18n="corp.kvkk.p2">Bu vaka yalnızca para cezasıyla açıklanamaz. Müşteri güveni, kamuoyu algısı, olay müdahale maliyeti ve kurumsal sorumluluk ayrı ayrı değerlendirilmelidir. Ayrıca olay, internet tarayıcı güvenliğinin tek başına yeterli olmadığını, çok faktörlü doğrulama, izleme, eğitim ve diğer temel kontrollerle birlikte ele alınması gerektiğini de gösteriyor.</p>
       </div>
     </div>
   </section>
@@ -276,14 +273,14 @@
   <section class="section">
     <div class="container">
       <div class="section-head reveal">
-        <h2 class="section-title" data-i18n="corp.gain.title">Kurumsal İnternet Tarayıcı Kuruma Ne Kazandırır?</h2>
+        <h2 class="section-title" data-i18n="corp.gain.title"><span class='brand-word'>opunta</span> İnternet Tarayıcı Kurumlara Ne Kazandırır?</h2>
       </div>
       <div class="grid grid-3">
-        <article class="card reveal"><h3 data-i18n="corp.gain.i1t">Kuruma ait bilgiler üzerinde daha somut kontrol</h3><p data-i18n="corp.gain.i1p">Müşteri listeleri, poliçeler, sözleşmeler, finansal raporlar, teknik çizimler, kaynak kodu ve ticari sırlar, yanlış yere yükleme, kopyalama, indirme veya yetkisiz erişim nedeniyle kurum dışına çıkabilir. Tarayıcı katmanında uygulanan politikalar, bu tür işlemlere ilişkin görünürlük sağlar ve uygun senaryolarda paylaşımı sınırlandırır.</p></article>
-        <article class="card reveal"><h3 data-i18n="corp.gain.i2t">İhlalin etkisini büyümeden sınırlama fırsatı</h3><p data-i18n="corp.gain.i2p">Şüpheli bağlantılar, riskli eklentiler, kimlik bilgisi hırsızlığı ve kontrolsüz web oturumları, kritik sistemlere uzanan ilk adım olabilir. Kurumsal internet tarayıcı tek başına tüm saldırıları önlemez, ancak kullanıcı işlemlerinin gerçekleştiği ortamda ek kontrol sağlayarak savunma hattını güçlendirir.</p></article>
-        <article class="card reveal"><h3 data-i18n="corp.gain.i3t">Yasaklamak çözüm değil</h3><p data-i18n="corp.gain.i3p">Amaç her bağlantıyı durdurmak veya yapay zekâyı yasaklamak değildir. Kurumun risk iştahına göre tasarlanan politikalar, normal iş akışını mümkün olduğunca korurken yüksek riskli eylemlere odaklanır. Başarılı bir geçiş, kullanım deneyimiyle güvenlik arasında kurulan dengeye bağlıdır.</p></article>
-        <article class="card reveal"><h3 data-i18n="corp.gain.i4t">Maliyetleri yalnızca olaydan sonra değil, olaydan önce yönetme</h3><p data-i18n="corp.gain.i4p">İhlal müdahalesi, iş kaybı, müşteri iletişimi, dış danışmanlık, inceleme ve itibar maliyeti. Bu başlıklar çoğu zaman tek bir teknik zafiyetin ötesine geçer. Kurumsal internet tarayıcı kararı bu nedenle yalnızca lisans maliyetine değil, risk azaltımı ve iş sürekliliği etkisine göre değerlendirilmelidir.</p></article>
-        <article class="card reveal"><h3 data-i18n="corp.gain.i5t">Kurumun teknoloji tercihinde söz sahibi olması</h3><p data-i18n="corp.gain.i5p">Hangi kullanıcı gruplarının hangi işlemleri gerçekleştirebileceği ve hassas bilgilerin nasıl ele alınacağı kurumsal politika konusu olmalıdır. Tarayıcı seçimini bireysel alışkanlık düzeyinden çıkaran temel fayda budur.</p></article>
+        <article class="card reveal"><h3 data-i18n="corp.gain.i1t">Kurumsal bilgiler üzerinde daha somut kontrol imkanı sunar.</h3><p data-i18n="corp.gain.i1p">Müşteri listeleri, poliçeler, sözleşmeler, finansal raporlar, teknik çizimler, kaynak kodu ve ticari sırlar, yanlış yere yükleme, kopyalama, indirme veya yetkisiz erişim nedeniyle kurum dışına çıkabilir. <span class='brand-word'>opunta</span> sayesinde uygulanabilen politikalar, bu tür işlemlere ilişkin görünürlük sağlar ve uygun senaryolarda paylaşımı sınırlandırır.</p></article>
+        <article class="card reveal"><h3 data-i18n="corp.gain.i2t">İhlal etkileri büyümeden sınırlama imkanı sunar.</h3><p data-i18n="corp.gain.i2p">Şüpheli bağlantılar, riskli eklentiler, kimlik bilgisi hırsızlığı ve kontrolsüz web oturumları, kritik sistemlere uzanan ilk adım olabilir. <span class='brand-word'>opunta</span>, iş süreçlerinin ve işlemlerinin gerçekleştiği tarayıcı ortamında ek kontrol sağlayarak savunma hattını güçlendirir.</p></article>
+        <article class="card reveal"><h3 data-i18n="corp.gain.i3t">Yasaklamayı çözüm olmaktan çıkarır, verimli çalışma imkanı sunar.</h3><p data-i18n="corp.gain.i3p">Amaç her bağlantıyı durdurmak veya yapay zekâyı yasaklamak değildir. <span class='brand-word'>opunta</span> platformu üzerinde sunulan, kurumunuzun risk iştahına göre tasarlanabilen politikalar sayesinde, tarayıcı ve yapay zeka ekranları üzerindeki iş akışları mümkün olduğunca korunurken, yüksek riskli eylemlere odaklanabilmek de mümkündür. Başarılı bir geçiş, verimlilik ve güvenlik arasında kurulan dengeye bağlıdır.</p></article>
+        <article class="card reveal"><h3 data-i18n="corp.gain.i4t">Maliyetleri yalnızca olaydan sonra değil, olaydan önce de yönetebilme imkanı sunar.</h3><p data-i18n="corp.gain.i4p">İhlal müdahalesi, iş kaybı, müşteri iletişimi, dış danışmanlık, inceleme ve itibar maliyeti. Bu başlıklar çoğu zaman tek bir teknik zafiyetin ötesine geçer. <span class='brand-word'>opunta</span>'nın size sunduğu güvenli internet tarayıcı kararı bu nedenle yalnızca lisans maliyetine değil, risk azaltımı ve iş sürekliliği etkisine göre değerlendirilmelidir.</p></article>
+        <article class="card reveal"><h3 data-i18n="corp.gain.i5t">Kurumlara internet tarayıcı üzerinde söz sahibi olma imkanı sunar.</h3><p data-i18n="corp.gain.i5p">Hangi kullanıcı gruplarının hangi işlemleri gerçekleştirebileceği ve internet tarayıcı üzerindeki hassas bilgilerin nasıl ele alınacağı kurumsal politika konusu olmalıdır. İnternet Tarayıcı seçimi bireysel alışkanlık düzeyinden çıkarılmalıdır. <span class='brand-word'>opunta</span> size savunma hattınızı güçlendirecek mekanizmalar sağlar.</p></article>
       </div>
     </div>
   </section>
@@ -299,7 +296,7 @@
       </div>
       <div class="callout reveal" style="margin:32px 0">
         <h3 style="margin-bottom:10px" data-i18n="corp.ai.h2">Gölge yapay zekâ: Yasaklamak yerine, görünürlük sağlanmalı</h3>
-        <p data-i18n="corp.ai.p2">Kurum tarafından onaylanmamış yapay zekâ araçlarının iş için kullanılması, genellikle “Shadow AI” olarak adlandırılır. Risk, çalışanların kötü niyetli olması değil, hangi bilginin hangi hizmete aktarıldığının kurum tarafından yeterince görülememesidir. Kurumsal internet tarayıcı, tarayıcı üzerinden gerçekleşen yapay zeka kullanımı için görünürlük ve paylaşım sınırları sağlayabilir.</p>
+        <p data-i18n="corp.ai.p2">Kurum tarafından onaylanmamış yapay zekâ araçlarının iş için kullanılması, genellikle “Shadow AI” olarak adlandırılır. Risk, çalışanların kötü niyetli olması değil, hangi bilginin hangi hizmete aktarıldığının kurum tarafından yeterince görülememesidir. Güvenli internet tarayıcı, internet tarayıcı üzerinden gerçekleşen yapay zeka kullanımı için görünürlük ve paylaşım sınırları sağlayabilir.</p>
       </div>
       <div class="prose">
         <p class="reveal" data-i18n="corp.ai.p3">IBM’in 2025 tarihli Cost of a Data Breach araştırmasında, Shadow AI kullanım düzeyi yüksek kuruluşların ortalama veri ihlali maliyeti, bu kullanımı düşük olan veya hiç olmayan kuruluşlara kıyasla yaklaşık 670.000 ABD doları daha yüksek bulundu.</p>
@@ -319,7 +316,7 @@
           <thead><tr><th data-i18n="corp.sector.h1">Sektör</th><th data-i18n="corp.sector.h2">Öncelikli Risk ve Fayda</th></tr></thead>
           <tbody>
             <tr><td data-i18n="corp.sector.r1a">Banka / Finans</td><td data-i18n="corp.sector.r1b">Müşteri bilgilerinin, işlem ve finansal raporların web oturumlarında korunması, yetkisiz paylaşımın sınırlandırılması.</td></tr>
-            <tr><td data-i18n="corp.sector.r2a">Sigorta</td><td data-i18n="corp.sector.r2b">Poliçe, hasar, müşteri ve eksper bilgilerinin tarayıcı ve yapay zekâ araçları üzerinden kontrolsüz paylaşımına karşı önlem.</td></tr>
+            <tr><td data-i18n="corp.sector.r2a">Sigorta</td><td data-i18n="corp.sector.r2b">Poliçe, hasar, müşteri ve eksper bilgilerinin internet tarayıcı ve yapay zekâ araçları üzerinden kontrolsüz paylaşımına karşı önlem.</td></tr>
             <tr><td data-i18n="corp.sector.r3a">Kamu</td><td data-i18n="corp.sector.r3b">Kurum içi yazışmalar, hizmete özel bilgiler, vatandaş verileri ve dış hizmetlere erişimin kurumsal politika ile yönetilmesi.</td></tr>
             <tr><td data-i18n="corp.sector.r4a">Sağlık</td><td data-i18n="corp.sector.r4b">Hasta bilgileri ve klinik dokümanların web uygulamaları ile harici analiz araçları arasında kontrollü kullanılması.</td></tr>
             <tr><td data-i18n="corp.sector.r5a">Sanayi / Savunma</td><td data-i18n="corp.sector.r5b">Tasarım dokümanları, teknik çizimler, tedarikçi bilgileri ve fikrî mülkiyetin korunmasına katkı.</td></tr>
@@ -334,7 +331,7 @@
   <section class="section section-alt">
     <div class="container">
       <div class="prose">
-        <p class="reveal" data-i18n-html="corp.close.p1"><span class="brand-word">opunta</span> tarayıcı, internet ve yapay zekâ kullanımının gerçekleştiği ortamı, politika uygulanabilen bir çalışma ortamına dönüştürür.</p>
+        <p class="reveal" data-i18n-html="corp.close.p1"><span class="brand-word">opunta</span> internet tarayıcı, internet ve yapay zekâ kullanımının gerçekleştiği ortamı, politika uygulanabilen bir çalışma ortamına dönüştürür.</p>
         <p class="reveal" data-i18n="corp.close.p2">Hedefi, kuruma ait bilgilerin kontrolsüz paylaşımını sınırlamak, çalışanların iş akışını korumak ve yönetim görünürlüğünü güçlendirmektir.</p>
         <p class="reveal" data-i18n="corp.close.p3">Belirtilen tüm özellikler ve yeni kabiliyetler, güncel tehditler ve sektör ihtiyaçları doğrultusunda sürekli geliştirilmektedir.</p>
       </div>
@@ -347,7 +344,7 @@
       <div class="callout reveal" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;justify-content:space-between">
         <div style="max-width:60ch">
           <h3 style="margin-bottom:8px" data-i18n="corp.cta.title">Kendi altyapınızda görün, test edin.</h3>
-          <p data-i18n="corp.cta.p">Ortamınızı ve ihtiyaçlarınızı bize anlatın, opunta platformunu size tanıtalım.</p>
+          <p data-i18n="corp.cta.p">Ortamınızı ve ihtiyaçlarınızı bize anlatın, <span class='brand-word'>opunta</span> platformunu size tanıtalım.</p>
         </div>
         <a class="btn btn-primary" href="#/iletisim" data-i18n="corp.cta.btn">Bize Ulaşın</a>
       </div>
@@ -373,10 +370,10 @@
         <p class="section-lead" data-i18n="corp.lc.lead">Her yapay zeka etkileşiminin geçtiği dört aşama</p>
       </div>
       <div class="lifecycle">
-        <div class="step c1 reveal"><div class="n">1</div><h3 data-i18n-html="home.lc.s1t">GÖR <span>(OBSERVE)</span></h3><p data-i18n="home.lc.s1d">Her yapay zeka etkileşimi “prompt, yanıt ve ek dosyalar” tek turda, okunur biçimde görünür.</p></div>
-        <div class="step c2 reveal"><div class="n">2</div><h3 data-i18n-html="home.lc.s2t">KARAR VER <span>(DECIDE)</span></h3><p data-i18n="home.lc.s2d">Karar gönderimden önce ve cihazda verilir. opunta servisleri yanıt vermezse gönderim durur.</p></div>
-        <div class="step c3 reveal"><div class="n">3</div><h3 data-i18n-html="home.lc.s3t">YÖNET <span>(GOVERN)</span></h3><p data-i18n="home.lc.s3d">Yasaklamak yerine: uyar, gerekçe iste, maskele, süreli izin ver.</p></div>
-        <div class="step c4 reveal"><div class="n">4</div><h3 data-i18n-html="home.lc.s4t">KANITLA <span>(PROVE)</span></h3><p data-i18n="home.lc.s4d">Mühürlü kayıt saklama: kim, neyi, ne zaman açtı — denetime hazır kanıt ve uyumluluk çalışmalarını destekleyen altyapı.</p></div>
+        <div class="step c1 reveal"><div class="n">1</div><h3 data-i18n-html="home.lc.s1t">GÖR <span>(OBSERVE)</span></h3><p data-i18n="home.lc.s1d"><span class='brand-word'>opunta</span> yapay zeka etkileşimindeki, prompt, yanıt ve ek dosyaları tek turda, okunur biçimde görünür kılar.</p></div>
+        <div class="step c2 reveal"><div class="n">2</div><h3 data-i18n-html="home.lc.s2t">KARAR VER <span>(DECIDE)</span></h3><p data-i18n="home.lc.s2d"><span class='brand-word'>opunta</span> kararı gönderimden önce ve cihazda verir, servisler yanıt vermezse gönderim durur.</p></div>
+        <div class="step c3 reveal"><div class="n">3</div><h3 data-i18n-html="home.lc.s3t">YÖNET <span>(GOVERN)</span></h3><p data-i18n="home.lc.s3d"><span class='brand-word'>opunta</span> yasaklamak yerine uyarır, gerekçe ister, maskeler, süreli izin verir.</p></div>
+        <div class="step c4 reveal"><div class="n">4</div><h3 data-i18n-html="home.lc.s4t">KANITLA <span>(PROVE)</span></h3><p data-i18n="home.lc.s4d"><span class='brand-word'>opunta</span> mühürlü kayıt oluşturur ve saklar. Kim, neyi, ne zaman açtı bilgisi, denetime hazır kanıtlarla, uyumluluk çalışmalarını destekleyen bir yapıda sunulur.</p></div>
       </div>
     </div>
   </section>
@@ -400,7 +397,7 @@
       <div class="gov-block reveal">
         <h3 data-i18n="ai.r1t">Yapay zekâ risklerini doğru sınıflandırmak</h3>
         <p data-i18n="ai.r1p">Yapay zekâ riski yalnızca “veri sızıntısı” değildir. Kullanım kanalından model çıktısına, üçüncü taraf entegrasyonlardan otonom ajanlara kadar farklı risk alanları bulunur.</p>
-        <h4 data-i18n="ai.r1h1">Bugün odak alanı: Tarayıcı üzerinden yönetilebilir riskler</h4>
+        <h4 data-i18n="ai.r1h1">Bugün odak alanı: İnternet Tarayıcı üzerinden yönetilebilir riskler</h4>
         <ul class="risk-now">
           <li data-i18n="ai.r1a1">Onaylı / onaysız yapay zekâ servislerini görmek</li>
           <li data-i18n="ai.r1a2">Prompt ve dosya paylaşımını denetlemek</li>
@@ -411,7 +408,7 @@
         <h4 data-i18n="ai.r1h2">Ayrı kontroller gerektiren alanlar</h4>
         <ul class="risk-other">
           <li data-i18n="ai.r1b1">Modelin eğitimi, doğruluğu ve önyargısı</li>
-          <li data-i18n="ai.r1b2">Tarayıcı dışı API ve sistem entegrasyonları</li>
+          <li data-i18n="ai.r1b2">İnternet Tarayıcı dışı API ve sistem entegrasyonları</li>
           <li data-i18n="ai.r1b3">Otonom ajanların araç ve sistem eylemleri</li>
           <li data-i18n="ai.r1b4">Model hırsızlığı ve eğitim verisi zehirleme</li>
           <li data-i18n="ai.r1b5">Yüksek riskli yapay zekâ kararlarının hukuki doğrulaması</li>
@@ -419,8 +416,8 @@
       </div>
       <div class="gov-block reveal">
         <h3 data-i18n="ai.s1t">Gölge yapay zekâ yalnızca sohbet uygulamalarında ortaya çıkmaz</h3>
-        <p data-i18n="ai.s1p1">Kullanım çoğunlukla sekiz alanda görünür hâle gelir: çalışanların tarayıcıları, kişisel hesaplar, SaaS uygulamalarındaki gömülü AI özellikleri, departmanların bağımsız satın aldığı araçlar, geliştirici ortamları, iş akışı entegrasyonları, yüklenen belgeler ve otonom ajanlar. Bunların her biri aynı teknolojiyle veya aynı derinlikte denetlenemez.</p>
-        <p data-i18n-html="ai.s1p2"><span class="brand-word">opunta</span>’nın güçlü odağı sayesinde, desteklenen tarayıcı oturumları ile bu oturumlardaki yapay zekâ servislerine yönelen içerik ve erişim akışı yönetilebilmektedir.</p>
+        <p data-i18n="ai.s1p1">Kullanım çoğunlukla sekiz alanda görünür hâle gelir: çalışanların internet tarayıcıları, kişisel hesaplar, SaaS uygulamalarındaki gömülü AI özellikleri, departmanların bağımsız satın aldığı araçlar, geliştirici ortamları, iş akışı entegrasyonları, yüklenen belgeler ve otonom ajanlar. Bunların her biri aynı teknolojiyle veya aynı derinlikte denetlenemez.</p>
+        <p data-i18n-html="ai.s1p2"><span class="brand-word">opunta</span>’nın güçlü odağı sayesinde, desteklenen internet tarayıcı oturumları ile bu oturumlardaki yapay zekâ servislerine yönelen içerik ve erişim akışı yönetilebilmektedir.</p>
       </div>
       <div class="gov-block reveal">
         <h3 data-i18n="ai.c1t">Yapay zekâ etkileşimlerini kayıt altına alma</h3>
@@ -465,15 +462,15 @@
       </div>
       <div class="gov-block reveal">
         <h3 data-i18n="ai.fw.t">Denetim çerçeveleriyle konuşan bir yönetim modeli</h3>
-        <p data-i18n-html="ai.fw.p">Yapay zeka yönetişimi yalnızca ürün işlevlerinden oluşmaz. Kurumun rol ve sorumlulukları, risk değerlendirmesi, kayıt politikası, çalışan eğitimi, olay inceleme usulü ve sürekli iyileştirme yaklaşımı da gereklidir. <span class="brand-word">opunta</span>, bu modelin tarayıcı üzerinden gerçekleşen kullanımına ilişkin teknik kontrol ve kayıt katmanını destekler.</p>
+        <p data-i18n-html="ai.fw.p">Yapay zeka yönetişimi yalnızca ürün işlevlerinden oluşmaz. Kurumun rol ve sorumlulukları, risk değerlendirmesi, kayıt politikası, çalışan eğitimi, olay inceleme usulü ve sürekli iyileştirme yaklaşımı da gereklidir. <span class="brand-word">opunta</span>, bu modelin internet tarayıcı üzerinden gerçekleşen kullanımına ilişkin teknik kontrol ve kayıt katmanını destekler.</p>
         <div class="table-wrap">
           <table class="sector-table">
-            <thead><tr><th data-i18n="ai.fw.h1">Çerçeve / Kaynak</th><th data-i18n="ai.fw.h2">Kurum açısından beklenti</th><th data-i18n="ai.fw.h3">opunta ile ilişkisi ve sınır</th></tr></thead>
+            <thead><tr><th data-i18n="ai.fw.h1">Çerçeve / Kaynak</th><th data-i18n="ai.fw.h2">Kurum açısından beklenti</th><th data-i18n="ai.fw.h3"><span class='brand-word'>opunta</span> ile ilişkisi ve sınır</th></tr></thead>
             <tbody>
               <tr><td data-i18n="ai.fw.r1a">ISO/IEC 42001</td><td data-i18n="ai.fw.r1b">Yapay zeka yönetim sistemi, politika, risk yönetimi, sorumluluk ve sürekli iyileştirme.</td><td data-i18n="ai.fw.r1c">İzlenebilir kullanım ve politika uygulamasına destek verir</td></tr>
               <tr><td data-i18n="ai.fw.r2a">NIST AI RMF</td><td data-i18n="ai.fw.r2b">Yönetişim, bağlamı anlama, ölçme ve riskleri yönetme işlevleri.</td><td data-i18n="ai.fw.r2c">Kullanım görünürlüğü, kontrol ve kayıt kanıtları oluşturulabilir</td></tr>
               <tr><td data-i18n="ai.fw.r3a">AB Yapay Zekâ Tüzüğü</td><td data-i18n="ai.fw.r3b">Kapsama ve role göre değişen yükümlülükler, şeffaflık, yapay zeka okuryazarlığı ve risk temelli denetim.</td><td data-i18n="ai.fw.r3c">İlgili kuruluşlarda kullanım disiplini ve izlenebilirliği destekleyebilir</td></tr>
-              <tr><td data-i18n="ai.fw.r4a">OWASP GenAI LLM Top 10 — 2026</td><td data-i18n="ai.fw.r4b">Hassas bilgi ifşası, prompt injection, fazla yetki ve benzeri riskleri ayrı ayrı ele alma.</td><td data-i18n="ai.fw.r4c">Tarayıcı içi paylaşım kontrolünde ilgili risklere katkı sağlar</td></tr>
+              <tr><td data-i18n="ai.fw.r4a">OWASP GenAI LLM Top 10 — 2026</td><td data-i18n="ai.fw.r4b">Hassas bilgi ifşası, prompt injection, fazla yetki ve benzeri riskleri ayrı ayrı ele alma.</td><td data-i18n="ai.fw.r4c">İnternet Tarayıcı içi paylaşım kontrolünde ilgili risklere katkı sağlar</td></tr>
             </tbody>
           </table>
         </div>
@@ -519,7 +516,7 @@
   <section class="section">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow" data-i18n="corp.layer.eyebrow">Kurumsal İnternet Tarayıcı ve Yapay Zeka Yönetişim Platformu</p>
+        <p class="eyebrow" data-i18n="corp.layer.eyebrow">Güvenli İnternet Tarayıcı ve Yapay Zeka Yönetişim Platformu</p>
         <h2 class="section-title" data-i18n="corp.layer.title">Kullanıcı Lisansı ve Paket Bileşenleri</h2>
         <p class="section-lead" data-i18n="corp.layer.lead">Üç bileşen, tek kurulum paketi içinde ve tek kimlikle gelir.</p>
       </div>
@@ -527,36 +524,36 @@
         <article class="card xcard reveal" aria-expanded="true">
           <div class="xhead">
             <div class="xtitle">
-              <h3 data-i18n="corp.bear.tag">Güvenli Kurumsal İnternet Tarayıcı</h3>
+              <h3 data-i18n="corp.bear.tag"><span class='brand-word'>opunta</span> İnternet Tarayıcı</h3>
               <span class="xsub" data-i18n="corp.bear.os">Windows ve MacOS uyumlu</span>
             </div>
             <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
           </div>
-          <p data-i18n="corp.bear.p">Kurum politikalarının uygulandığı güvenli kurumsal internet tarayıcı.</p>
+          <p data-i18n="corp.bear.p">Kurum politikalarının uygulandığı güvenli internet tarayıcı.</p>
           <div class="xbody"><div><div class="xbody-inner">
             <ul class="mono-list" data-i18n-html="corp.bear.list">
-              <li><strong>Policy-Enforced Browser</strong> — Site, eklenti, çerez ve indirme politikaları tarayıcının içinde uygulanır.</li>
-              <li><strong>Fail-Closed</strong> — opunta servisleri aktif veya güncel değilse açılmaz.</li>
-              <li><strong>Single Identity</strong> — Oturum kullanıcı servislerindedir, tarayıcıda içerik kuralları ve oturum bilgileri tutulmaz.</li>
+              <li><strong>Policy-Enforced Browser</strong> — Site, eklenti, çerez ve indirme politikaları internet tarayıcının içinde uygulanır.</li>
+              <li><strong>Fail-Closed</strong> — <span class="brand-word">opunta</span> servisleri aktif veya güncel değilse açılmaz.</li>
+              <li><strong>Single Identity</strong> — Oturum kullanıcı servislerindedir, internet tarayıcıda içerik kuralları ve oturum bilgileri tutulmaz.</li>
               <li><strong>URL Blocking</strong> — Riskli veya istenmeyen web adresleri merkezi politikayla engellenir.</li>
-              <li><strong>Extension Blocklist</strong> — Onaysız tarayıcı eklentilerinin kurulumu ve çalışması engellenir.</li>
+              <li><strong>Extension Blocklist</strong> — Onaysız internet tarayıcı eklentilerinin kurulumu ve çalışması engellenir.</li>
               <li><strong>Download Control</strong> — Dosya indirme, türüne ve kaynağına göre engellenebilir.</li>
               <li><strong>Cookie Control</strong> — Üçüncü taraf ve izleme çerezleri politika ile engellenir.</li>
               <li><strong>Site Performance Monitoring</strong> — Web sitelerinin yükleme performansı ölçülür ve raporlanır.</li>
             </ul>
-            <p data-i18n="corp.bear.t1">Tarayıcı, kenardan izleyen değil, politikanın uygulandığı noktadır, geriye düşülebilecek korumasız bir mod yoktur.</p>
+            <p data-i18n="corp.bear.t1">İnternet Tarayıcı, kenardan izleyen değil, politikanın uygulandığı noktadır, geriye düşülebilecek korumasız bir mod yoktur.</p>
           </div></div></div>
         </article>
 
         <article class="card xcard reveal" aria-expanded="true">
           <div class="xhead">
             <div class="xtitle">
-              <h3 data-i18n="corp.ext.tag">Tarayıcı Eklentisi</h3>
+              <h3 data-i18n="corp.ext.tag"><span class='brand-word'>opunta</span> Eklenti</h3>
               <span class="xsub" data-i18n-html="corp.ext.os">Google Chrome ve <span class="brand-word">opunta</span> Browser uyumlu</span>
             </div>
             <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
           </div>
-          <p data-i18n="corp.ext.p">Yapay zeka sohbet ekranında, tam olay yerinde yönetişim. Edge, Firefox ve Safari desteği çok yakında.</p>
+          <p data-i18n="corp.ext.p">Yönetemediğiniz tarayıcıları yönetilebilir ve izlenebilir kılan <span class='brand-word'>opunta</span> eklenti, Yapay zeka sohbet ekranında yönetişim yetenekleri de sunar. Edge, Firefox ve Safari desteği çok yakında.</p>
           <div class="xbody"><div><div class="xbody-inner">
             <ul class="mono-list" data-i18n-html="corp.ext.list">
               <li><strong>AI Conversation Capture</strong> — Chat ekranına yazılanlar, yanıtlar ve dosyalar izlenebilir, saklanabilir.</li>
@@ -572,7 +569,7 @@
         <article class="card xcard reveal" aria-expanded="true">
           <div class="xhead">
             <div class="xtitle">
-              <h3 data-i18n="corp.agent.tag">Uç Nokta Servisi</h3>
+              <h3 data-i18n="corp.agent.tag"><span class='brand-word'>opunta</span> Uç Nokta Servisi (Endpoint)</h3>
               <span class="xsub" data-i18n="corp.agent.os">Windows ve MacOS uyumlu</span>
             </div>
             <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
@@ -581,7 +578,7 @@
           <div class="xbody"><div><div class="xbody-inner">
             <ul class="mono-list" data-i18n-html="corp.agent.list">
               <li><strong>On-Device Decision</strong> — Karar cihazda verilir, gecikme sıfıra yakındır ve ağ kesildiğinde bile çalışır. Human-in-the-Loop gerektiğinde etkileşim askıya alınır.</li>
-              <li><strong>Tamper Evidence</strong> — Yeni bir tarayıcı veya yapay zeka uygulaması yüklendiğinde alarm üretilir, yakalama sessizliği, yönetilmeyen profiller ve taklit girişimleri de sinyal olarak işlenir.</li>
+              <li><strong>Tamper Evidence</strong> — Yeni bir internet tarayıcı veya yapay zeka uygulaması yüklendiğinde alarm üretilir, yakalama sessizliği, yönetilmeyen profiller ve taklit girişimleri de sinyal olarak işlenir.</li>
               <li><strong>Signed Maintenance</strong> — Bakım, güncelleme ve kaldırma eylemleri yalnızca yetki ile mümkündür, yetkisiz kullanıcı korumayı kapatamaz.</li>
             </ul>
           </div></div></div>
@@ -594,9 +591,9 @@
   <section class="section section-alt">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow" data-i18n="corp.ct.eyebrow">opunta Control Tower</p>
+        <p class="eyebrow" data-i18n="corp.ct.eyebrow"><span class='brand-word'>opunta</span> Control Tower</p>
         <h2 class="section-title" data-i18n="corp.ct.title">Merkezi Yönetim Konsolu ve Teknik Özellikleri</h2>
-        <p class="section-lead" data-i18n="corp.ct.lead">Sekiz modül, tarayıcı ve yapay zekâ faaliyetlerini görünür, yönetilebilir ve denetlenebilir kurumsal telemetriye dönüştürür. Merkezi politikalar, kayıtlar ve denetim ise sizin altyapınızda, sizin kontrolünüzde kalır.</p>
+        <p class="section-lead" data-i18n="corp.ct.lead"><span class='brand-word'>opunta</span>'nın size sunduğu sekiz modül, internet tarayıcı ve yapay zekâ faaliyetlerini görünür, yönetilebilir ve denetlenebilir kurumsal telemetriye dönüştürür. Merkezi politikalar, kayıtlar ve denetim sizin altyapınızda, sizin kontrolünüzde kalır.</p>
       </div>
       <div class="grid grid-4">
         <article class="card xcard reveal" aria-expanded="true">
@@ -617,7 +614,7 @@
         <article class="card xcard reveal" aria-expanded="true">
           <div class="xhead"><h3 data-i18n-html="corp.t4t">Eşik Uyarıları <span class="en-sub">(Threshold Alerting)</span></h3><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></div>
           <p data-i18n="corp.t4.p">Olay türü, kural, kişi ve eşiğe göre uyarı. İmzalı webhook ile dış sistemlere aktarım.</p>
-          <div class="xbody"><div><div class="xbody-inner"><p data-i18n="corp.t4.d">Eşik tabanlı uyarı gürültüyü bastırır: tekil olaylar kayda geçer, örüntüler alarm üretir. İmzalı webhook'lar SIEM/SOAR'unuza akar, tarayıcı ve yapay zeka olayları mevcut olay hatlarınıza katılır.</p></div></div></div>
+          <div class="xbody"><div><div class="xbody-inner"><p data-i18n="corp.t4.d">Eşik tabanlı uyarı gürültüyü bastırır: tekil olaylar kayda geçer, örüntüler alarm üretir. İmzalı webhook'lar SIEM/SOAR'unuza akar, internet tarayıcı ve yapay zeka olayları mevcut olay hatlarınıza katılır.</p></div></div></div>
         </article>
         <article class="card xcard reveal" aria-expanded="true">
           <div class="xhead"><h3 data-i18n-html="corp.t5t">İnceleme İş Akışı <span class="en-sub">(Review Workflow)</span></h3><span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></div>
@@ -658,7 +655,7 @@
         <article class="card reveal"><span class="tag" data-i18n="corp.d4tag">İnternete Kapalı Ağ</span><h3 data-i18n-html="corp.d4t">Kapalı Ağa Hazır <span class="en-sub">(Air-Gap Ready)</span></h3><p data-i18n="corp.d4d">Air-gap, dış ağla hiç bağlantısı olmayan ortam demektir, platform tek kurulum paketiyle kurulur, güncellemeler çevrimdışı paketlerle uygulanır.</p></article>
       </div>
       <div class="callout reveal" style="margin-top:20px">
-        <p data-i18n-html="corp.sov.support"><span class="brand-word">opunta</span>, müşterilerine platformu kullanmaya başlamaları için hiçbir ek ücret talep etmeksizin tam kapsamlı destek sunar. Ekibimiz, platformun bir kavram doğrulama (PoC) sürecini yürütmek için sizinle birlikte çalışır. Platformu satın almaya karar verdiğiniz takdirde, oluşturulan bu izole ortam (tenant) doğrudan üretim ortamına dönüştürülür, size ise yalnızca tarayıcıları dağıtmak ve platformu kullanmaya devam etmek kalır.</p>
+        <p data-i18n-html="corp.sov.support"><span class="brand-word">opunta</span>, müşterilerine platformu kullanmaya başlamaları için hiçbir ek ücret talep etmeksizin tam kapsamlı destek sunar. Ekibimiz, platformun bir kavram doğrulama (PoC) sürecini yürütmek için sizinle birlikte çalışır. Platformu satın almaya karar verdiğiniz takdirde, oluşturulan bu izole ortam (tenant) doğrudan üretim ortamına dönüştürülür, size ise yalnızca internet tarayıcıları dağıtmak ve platformu kullanmaya devam etmek kalır.</p>
         <p data-i18n="corp.sov.pricing">Kurulum modeli lisans fiyatlandırmasına yansır, bulut üzerindeki izole ortam kurulumlarında destek uzaktan ve kesintisiz sağlanabilirken Air-Gap kurulumlarında hizmetin yerinde verilmesi gerekebilir.</p>
       </div>
     </div>
@@ -670,7 +667,7 @@
       <div class="callout reveal" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;justify-content:space-between">
         <div style="max-width:60ch">
           <h3 style="margin-bottom:8px" data-i18n="corp.cta.title">Kendi altyapınızda görün, test edin.</h3>
-          <p data-i18n="corp.cta.p">Ortamınızı ve ihtiyaçlarınızı bize anlatın, opunta platformunu size tanıtalım.</p>
+          <p data-i18n="corp.cta.p">Ortamınızı ve ihtiyaçlarınızı bize anlatın, <span class="brand-word">opunta</span> platformunu size tanıtalım.</p>
         </div>
         <a class="btn btn-primary" href="#/iletisim" data-i18n="corp.cta.btn">Bize Ulaşın</a>
       </div>
@@ -680,10 +677,13 @@
 </div>
 <div class="page-view" id="page-hakkimizda" data-route="hakkimizda" hidden>
 <main>
-  <section class="page-hero">
-    <div class="container">
+  <section class="page-hero about-hero">
+    <div class="container about-hero-inner">
+      <div class="about-hero-text">
       <h1 data-i18n="about.title">Hakkımızda</h1>
-      <p class="lead" data-i18n-html="about.lead"><span class="brand-lime">opunta,</span> Değişen tehditleri sürekli analiz eden, kurumların ve kullanıcıların dijital güvenlik ihtiyaçlarına yönelik modern savunma çözümleri geliştiren, çevikliği kurumsal disiplinle birleştiren bir teknoloji girişimidir.</p>
+      <p class="lead" data-i18n-html="about.lead"><span class="brand-word">opunta</span>, değişen tehditleri sürekli analiz eden, kurumların ve kullanıcıların dijital güvenlik ihtiyaçlarına yönelik modern savunma çözümleri geliştiren, çevikliği kurumsal disiplinle birleştiren bir teknoloji girişimidir.</p>
+      </div>
+      <img class="about-logo" src="assets/img/about-logo.png" alt="opunta logo">
     </div>
   </section>
 
@@ -719,9 +719,9 @@
           <div>
             <h3 data-i18n="about.f1.name">Tolga T. Tuncer</h3>
             <p class="role" data-i18n="about.f1.role">Kurucu · CEO</p>
-            <p data-i18n="about.f1.p1">Tolga, teknoloji alanındaki teknik bilgi birikimini stratejik proje geliştirme, girişimcilik ve yöneticilik tecrübesiyle birleştirerek opunta'nın vizyonuna yön veren güçlü bir liderdir.</p>
+            <p data-i18n="about.f1.p1">Tolga, teknoloji alanındaki teknik bilgi birikimini stratejik proje geliştirme, girişimcilik ve yöneticilik tecrübesiyle birleştirerek <span class='brand-word'>opunta</span>'nın vizyonuna yön veren güçlü bir liderdir.</p>
             <p data-i18n="about.f1.p2">Kariyeri boyunca Microsoft'ta Kamu Sektörü Satış Müdürü, GE Healthcare'de Stratejik Projeler Satış Direktörü ve UiPath'te Bölge Satış Müdürü pozisyonlarında görev alarak, pazarlama, satış, kamu ilişki yönetimi ve uluslararası firma deneyimini harmanlayan kritik rolleri üstlenmiştir.</p>
-            <p data-i18n="about.f1.p3">İlk girişimcilik deneyimi olan One Dose Health'in kuruluşunu gerçekleştirmiş ve dört yıl boyunca CEO'luğunu yürütmüştür. Dijital sağlık alanında 500 bin kullanıcı tabanına hizmet veren bir başarıya imza atmış, JCI tarafından Dijital Sağlık alanında dünyada ilk kez belgelendirilen şirket olma başarısını Türkiye'ye kazandırmış, bu girişimi başarılı bir exit ile tamamlamasının ardından teknoloji ve girişimcilik deneyimini opunta'ya taşımıştır.</p>
+            <p data-i18n="about.f1.p3">İlk girişimcilik deneyimi olan One Dose Health'in kuruluşunu gerçekleştirmiş ve dört yıl boyunca CEO'luğunu yürütmüştür. Dijital sağlık alanında 500 bin kullanıcı tabanına hizmet veren bir başarıya imza atmış, JCI tarafından Dijital Sağlık alanında dünyada ilk kez belgelendirilen şirket olma başarısını Türkiye'ye kazandırmış, bu girişimi başarılı bir exit ile tamamlamasının ardından teknoloji ve girişimcilik deneyimini <span class='brand-word'>opunta</span>'ya taşımıştır.</p>
             <p data-i18n="about.f1.p4">Akademik geçmişinde Bilgisayar Mühendisliği lisans eğitimi bulunmaktadır. Bu teknik temelin üzerine İstanbul Bilgi Üniversitesi'nde Bilgi Teknolojileri Hukuku alanında yüksek lisans yapmış ve Başkent Üniversitesi'nde İşletme Yönetimi alanında doktora (PhD) çalışmalarına devam etmektedir.</p>
             <p data-i18n="about.f1.p5">Türkiye Bilişim Derneği'nde (TBD) Yönetim Kurulu Üyesi olarak sektörel gelişime katkı sağlayan çalışmalarını sürdürmekte, Yapay Zeka, Robotik Süreç Otomasyonu (RPA), Bulut Bilişim Mimarileri, Siber Güvenlik ve Veri Gizliliği alanlarında güçlü bir stratejik hakimiyete sahiptir.</p>
           </div>
@@ -731,7 +731,7 @@
           <div>
             <h3 data-i18n="about.f2.name">Semih Eskin</h3>
             <p class="role" data-i18n="about.f2.role">Kurucu · CTO</p>
-            <p data-i18n="about.f2.p1">Semih, opunta'nın teknolojik altyapısını modern, güvenli ve ölçeklenebilir standartlarda inşa eden ve kurumsal çözümlere yön veren teknik kurucu ortaktır.</p>
+            <p data-i18n="about.f2.p1">Semih, <span class='brand-word'>opunta</span>'nın teknolojik altyapısını modern, güvenli ve ölçeklenebilir standartlarda inşa eden ve kurumsal çözümlere yön veren teknik kurucu ortaktır.</p>
             <p data-i18n="about.f2.p2">Çocukluk yıllarında ailesinin hediye ettiği Commodore 64 ile başlayan bilgisayar serüveni, ortaokulda C programlama dilini öğrenmeye başlayarak devam etmiş ve bilgisayar mühendisliği eğitimiyle bu tutku profesyonel bir kariyere dönüşmüştür.</p>
             <p data-i18n="about.f2.p3">Sektör yolculuğunda Everpure şirketinin Küresel Strateji ve Çözümler ekibinde Baş Teknoloji Stratejisti (Principal Technology Strategist) olarak görev almış, bu rol kapsamında küresel ölçekte teknoloji stratejilerinin oluşturulması, gelecek vizyonunun şekillendirilmesi ve teknoloji yol haritalarına yön verilmesi konularında kapsamlı bir liderlik deneyimi kazanmıştır.</p>
             <p data-i18n="about.f2.p4">Microsoft bünyesindeki 10 yıllık kariyerinde, Kurumsal Uygulama Geliştirme Danışmanlığı ve Yazılım Mimarlığı gibi kritik görevlerin yanı sıra Bulut Çözüm Mimarı (Cloud Solution Architect) olarak Veri ve Yapay Zeka alanında projelere imza atmıştır.</p>
@@ -876,6 +876,7 @@
   </section>
 </main>
 </div>
+
 <footer class="site-footer">
   <div class="container footer-inner">
     <a class="footer-brand" href="#/">
@@ -883,18 +884,18 @@
       <img class="logo-dark" src="assets/img/logo-dark.png" alt="">
       <span class="wordmark">opunta</span>
     </a>
-    <span class="footer-tag" data-i18n="footer.tag">Kurumsal İnternet Tarayıcı ve Yapay Zeka Yönetişim Platformu</span>
+    <span class="footer-tag" data-i18n="footer.tag">Güvenli İnternet Tarayıcı ve Yapay Zeka Yönetişim Platformu</span>
     <nav class="footer-links" aria-label="Sosyal">
       <a href="https://www.linkedin.com/company/opunta" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.instagram.com/opuntacom" target="_blank" rel="noopener">Instagram</a>
     </nav>
-    <p class="footer-copy" data-i18n="footer.copy">© 2026 opunta — Modern Siber Güvenlik. Tüm hakları saklıdır.</p>
+    <p class="footer-copy" data-i18n="footer.copy">© 2026 <span class='brand-word'>opunta</span> — Modern Siber Güvenlik. Tüm hakları saklıdır.</p>
   </div>
 </footer>
 
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/router.js"></script>
+<script src="assets/js/video.js"></script>
 
 </body>
 </html>

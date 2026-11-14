@@ -1,0 +1,109 @@
+/* ============================================================
+   Tema-duyarlı hero/vitrin görselleri + okunabilirlik
+   ============================================================ */
+/* Çift görsel: dark/day crossfade */
+.hero-bg,.showcase-card img{transition:opacity .7s ease}
+.showcase-card img{transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .7s ease}
+.hero-bg.bg-day,.showcase-card img.bg-day{opacity:0}
+[data-theme="light"] .hero-bg.bg-day,[data-theme="light"] .showcase-card img.bg-day{opacity:1}
+[data-theme="light"] .hero-bg.bg-dark,[data-theme="light"] .showcase-card img.bg-dark{opacity:0}
+
+/* Açık tema: hero scrim + metin */
+[data-theme="light"] .hero-scrim{
+  background:
+    linear-gradient(90deg,rgba(247,245,255,.95) 0%,rgba(247,245,255,.72) 46%,rgba(247,245,255,.08) 76%),
+    linear-gradient(0deg,rgba(247,245,255,.78) 0%,rgba(247,245,255,0) 46%),
+    linear-gradient(180deg,rgba(247,245,255,.5) 0%,rgba(247,245,255,0) 24%);
+}
+[data-theme="light"] .hero-title{color:#160B33}
+[data-theme="light"] .hero-title .hl{color:#6A2BE9}
+[data-theme="light"] .hero-title .hl3{color:#5C7A00}
+[data-theme="light"] .hero-sub{color:rgba(22,11,51,.9)}
+
+/* Vitrin metni artık görselin altında: alttan yukarı açılan maske */
+.showcase-overlay{
+  justify-content:flex-end;
+  padding:clamp(56px,8vh,96px) 24px clamp(48px,7vh,88px);
+  background:linear-gradient(0deg,rgba(14,7,32,.94) 0%,rgba(14,7,32,.68) 34%,rgba(14,7,32,0) 62%);
+}
+
+/* Açık tema: vitrin scrim + metin */
+[data-theme="light"] .showcase-overlay{
+  background:linear-gradient(0deg,rgba(247,245,255,.96) 0%,rgba(247,245,255,.75) 34%,rgba(247,245,255,0) 62%);
+  text-shadow:none;
+}
+[data-theme="light"] .showcase-title{color:#160B33}
+[data-theme="light"] .showcase-lead{color:rgba(22,11,51,.92)}
+[data-theme="light"] .showcase-overlay .hl2{color:#5A22C8}
+[data-theme="light"] .showcase-overlay .brand-lime{color:#5C7A00}
+[data-theme="light"] .showcase-overlay .btn-light{background:#6A2BE9;color:#FFFFFF}
+[data-theme="light"] .showcase-overlay .btn-light:hover{background:#5A22C8;color:#FFFFFF}
+
+/* Açık tema: hero üzerindeki şeffaf header koyu metne döner */
+[data-theme="light"] .has-hero .site-header:not(.solid) .brand{color:#160B33}
+[data-theme="light"] .has-hero .site-header:not(.solid) .brand:hover{color:#160B33}
+[data-theme="light"] .has-hero .site-header:not(.solid) .brand .logo-light{display:block}
+[data-theme="light"] .has-hero .site-header:not(.solid) .brand .logo-dark{display:none}
+[data-theme="light"] .has-hero .site-header:not(.solid) .main-nav a{color:rgba(22,11,51,.82)}
+[data-theme="light"] .has-hero .site-header:not(.solid) .main-nav a:hover{color:#160B33;background:rgba(22,11,51,.07)}
+[data-theme="light"] .has-hero .site-header:not(.solid) .main-nav a[aria-current="page"]{color:#6A2BE9;font-weight:600}
+[data-theme="light"] .has-hero .site-header:not(.solid) .tool-btn{
+  background:rgba(255,255,255,.55);border-color:rgba(22,11,51,.22);color:#160B33;
+}
+[data-theme="light"] .has-hero .site-header:not(.solid) .tool-btn:hover{border-color:#6A2BE9;color:#6A2BE9}
+[data-theme="light"] .has-hero .site-header:not(.solid) .switch{
+  background:rgba(255,255,255,.55);border-color:rgba(22,11,51,.22);color:rgba(22,11,51,.68);
+}
+[data-theme="light"] .has-hero .site-header:not(.solid) .switch:hover{border-color:#6A2BE9}
+
+/* Açık temada kubbe ışık geçişleri gizli (gündüz görselinde etkisiz) */
+[data-theme="light"] .streak-layer{display:none}
+
+/* Okunabilirlik: görsel üstü metinlerde punto büyütme */
+.hero-sub{font-size:clamp(17px,1.3vw,20px)}
+.showcase-lead{font-size:clamp(17px,1.3vw,21px)}
+
+@media (max-width:768px){
+  .hero-sub{font-size:16px}
+  .showcase-lead{font-size:16px}
+  .hero-bg.bg-day{filter:none}
+  [data-theme="light"] .hero-scrim{
+    background:
+      linear-gradient(90deg,rgba(247,245,255,.92) 0%,rgba(247,245,255,.80) 55%,rgba(247,245,255,.55) 100%),
+      linear-gradient(0deg,rgba(247,245,255,.85) 0%,rgba(247,245,255,.25) 55%),
+      linear-gradient(180deg,rgba(247,245,255,.55) 0%,rgba(247,245,255,.10) 26%);
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .hero-bg,.showcase-card img{transition:none}
+}
+
+/* ---------- Üç satırlı menü + büyük logo ---------- */
+.brand .logo-light,.brand .logo-dark{width:44px;height:53px}
+.main-nav a{font-size:13.5px;line-height:1.18;height:64px;max-width:132px;padding:6px 12px}
+@media (min-width:1680px){
+  .brand .logo-light,.brand .logo-dark{width:52px;height:63px}
+  .main-nav a{font-size:15px;height:72px;max-width:150px}
+}
+@media (min-width:2400px){
+  .brand .logo-light,.brand .logo-dark{width:62px;height:75px}
+  .main-nav a{font-size:17px;height:84px;max-width:176px}
+}
+@media (max-width:768px){
+  .main-nav a{height:auto;font-size:16px;padding:12px 10px;max-width:none;text-align:left;justify-content:flex-start}
+  .main-nav a br{display:none}
+}
+
+/* ---------- Mobil başlık: logo + wordmark sığsın ---------- */
+@media (max-width:768px){
+  .brand{flex:none;gap:8px}
+  .brand .logo-light,.brand .logo-dark{width:34px;height:41px}
+  .header-tools{gap:6px}
+  .header-tools .switch{height:38px;padding:2px}
+  .header-tools .switch-opt{min-width:30px;font-size:11px;padding:0 6px}
+  .header-tools .tool-btn.menu-toggle{min-width:40px;width:40px;padding:0}
+}
+
+/* Sol üst logo her temada orijinal mor sürümde kalır */
+.brand .logo-light{display:block !important}
+.brand .logo-dark{display:none !important}

@@ -190,3 +190,4 @@
   }
 })();
 
+window.__mainJsReady = true;
