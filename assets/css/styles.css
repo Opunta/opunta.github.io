@@ -206,20 +206,20 @@ h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,'Segoe UI','Liberation 
 .hero-scrim{
   position:absolute;inset:0;pointer-events:none;
   background:
-    linear-gradient(90deg,rgba(14,7,32,.86) 0%,rgba(14,7,32,.55) 42%,rgba(14,7,32,.06) 72%),
-    linear-gradient(0deg,rgba(14,7,32,.78) 0%,rgba(14,7,32,0) 48%),
-    linear-gradient(180deg,rgba(14,7,32,.55) 0%,rgba(14,7,32,0) 22%);
+    linear-gradient(90deg,rgba(14,7,32,.68) 0%,rgba(14,7,32,.38) 46%,rgba(14,7,32,.03) 74%),
+    linear-gradient(0deg,rgba(14,7,32,.55) 0%,rgba(14,7,32,0) 44%),
+    linear-gradient(180deg,rgba(14,7,32,.38) 0%,rgba(14,7,32,0) 20%);
 }
 .hero-content{position:relative;z-index:2;padding:110px 0 clamp(72px,11vh,128px)}
 .hero-title{
-  font-size:clamp(30px,4.4vw,64px);font-weight:700;color:#FFFFFF;
+  font-size:clamp(30px,4.4vw,64px);font-weight:700;color:#FFFFFF;text-shadow:0 2px 20px rgba(10,5,26,.5);
   max-width:none;margin-bottom:28px;letter-spacing:-.02em;line-height:1.12;
 }
 .hero-title .hl{color:#A78BFA}
 [data-theme="dark"] .hero-title .hl{color:var(--lime)}
 .hero-title .hl3{color:#D4FF4F}
 [data-theme="dark"] .hero-title .hl3{color:#A78BFA}
-.hero-sub{font-size:clamp(15.5px,1.15vw,18px);color:rgba(255,255,255,.86);max-width:62ch;margin-bottom:40px}
+.hero-sub{font-size:clamp(15.5px,1.15vw,18px);font-weight:600;color:rgba(255,255,255,.92);max-width:62ch;margin-bottom:40px;text-shadow:0 1px 14px rgba(10,5,26,.6)}
 .hero-sub p + p{margin-top:14px}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
 .hero-actions .btn{max-width:330px;white-space:normal;line-height:1.35;text-wrap:balance}
@@ -261,14 +261,14 @@ h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,'Segoe UI','Liberation 
   display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
   padding:clamp(56px,9vh,110px) 24px;
   background:linear-gradient(180deg,rgba(14,7,32,.66) 0%,rgba(14,7,32,.28) 42%,rgba(14,7,32,.55) 100%);
-  text-shadow:0 1px 8px rgba(14,7,32,.45);
+  text-shadow:0 1px 12px rgba(10,5,26,.65);
 }
 .showcase-title{
   font-size:clamp(30px,3.4vw,76px);font-weight:700;color:#FFFFFF;
   letter-spacing:-.02em;margin-bottom:14px;
 }
 .showcase-lead{
-  font-size:clamp(14.5px,1.15vw,19px);color:rgba(255,255,255,.88);
+  font-size:clamp(14.5px,1.15vw,19px);font-weight:600;color:rgba(255,255,255,.92);
   max-width:62ch;margin-bottom:24px;
 }
 /* Vitrin metni içindeki marka vurgusu — karanlık görsel üzerinde lime */
@@ -548,11 +548,13 @@ h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,'Segoe UI','Liberation 
   .hero-bg{object-position:58% center;filter:brightness(.68)}
   .hero-scrim{
     background:
-      linear-gradient(90deg,rgba(14,7,32,.90) 0%,rgba(14,7,32,.80) 55%,rgba(14,7,32,.60) 100%),
-      linear-gradient(0deg,rgba(14,7,32,.88) 0%,rgba(14,7,32,.22) 55%),
-      linear-gradient(180deg,rgba(14,7,32,.62) 0%,rgba(14,7,32,.08) 26%);
+      linear-gradient(90deg,rgba(14,7,32,.55) 0%,rgba(14,7,32,.38) 55%,rgba(14,7,32,.20) 100%),
+      linear-gradient(0deg,rgba(14,7,32,.50) 0%,rgba(14,7,32,.10) 55%),
+      linear-gradient(180deg,rgba(14,7,32,.35) 0%,rgba(14,7,32,.04) 26%);
   }
   /* Vitrin bölümleri mobilde de tam ekran; metin dolgu payı daraltılır */
+  .hero-title{text-shadow:0 2px 22px rgba(10,5,26,.7)}
+  .hero-sub{text-shadow:0 1px 16px rgba(10,5,26,.8)}
   .showcase-overlay{padding:96px 22px 72px}
 }
 

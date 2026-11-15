@@ -13,5 +13,7 @@ window.OPUNTA_VIDEO = {"film": "assets/video/personal.mp4", "kurumsal": "assets/
     }
   }
   window.addEventListener("hashchange", function () { setTimeout(assign, 60); });
+  document.addEventListener("DOMContentLoaded", function () { setTimeout(assign, 150); });
+  window.addEventListener("load", function () { setTimeout(assign, 300); });
   assign();
 })();

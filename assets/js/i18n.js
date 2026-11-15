@@ -9,7 +9,7 @@ en: {
   "nav.corp": "Benefits for Organizations",
   "nav.ai": "AI Security & Governance",
   "nav.tech": "Products & Technical Features",
-  "nav.contact": "Information Society Services",
+  "nav.contact": "Contact Us",
   "ai.title": "End-to-End Control in AI Usage",
   "ai.lead": "From usage to audit, every interaction is managed in four stages and becomes traceable.",
   "ai.intro.title": "Make AI Use Visible, Manageable and Auditable",
@@ -109,12 +109,12 @@ en: {
   "footer.tag": "Secure Enterprise Browser & AI Governance Platform",
   "footer.copy": "© 2026 <span class='brand-word'>opunta</span> — Modern Cybersecurity. All rights reserved.",
   "common.learnMore": "Learn more",
+  "common.video": "Watch Video",
   "common.closeDetail": "Click to collapse",
 
   /* ---- Ana Sayfa ---- */
   "home.title": 'Secure Enterprise Browser &amp;<br><span class="hl">AI Governance</span><br><span class="hl3">Platform</span>',
-  "home.sub": "<p>Today, browsers stay open and active on our screens for most of our working hours. Enterprise applications, documents, correspondence, web-based services and AI tools are increasingly converging on the same work surface.</p><p>This shift turns the browser from a mere internet access tool into one of the most critical work layers of the organization.</p><p>Enterprise browsers make this critical layer manageable, enabling the modern workplace to be defended against threats.</p>",
-  "home.cta1": 'Why an Organization Should Use the <span class="btn-brand">opunta</span> Browser',
+  "home.sub": "<p>Internet browsers are no longer just tools we use to access websites, they are the primary work environment where we use enterprise applications, documents, correspondence and AI tools.</p><p>However, mainstream internet browsers are designed primarily to simplify the experience of individual users. These browsers remember the sites we visit, our usage habits, session information and passwords, and they carry the same behavior into the enterprise work environment. Some information is stored on the device, while some is shared with cloud services.</p><p>Features that provide convenience in personal use create new risks for information security and data control in enterprise environments.</p><p><span class='brand-word'>opunta</span>, with its Secure Internet Browser and AI Governance Platform, enables organizations to manage their digital work environments and AI usage in line with their own security policies, creating a next-generation layer of defense.</p>",   "home.cta1": 'Why an Organization Should Use the <span class="btn-brand">opunta</span> Browser',
   "home.cta2": 'Why an Employee Should Use the <span class="btn-brand">opunta</span> Browser',
   "home.show.p.t": "Personal Benefits",
   "home.show.p.d": 'The <span class="hl2">opunta browser</span> works without interrupting your work experience. A seemingly harmless extension can read your passwords, a fake link can hijack your session, the private information you type into AI tools can be leaked or misused, the <span class="brand-word">opunta</span> browser stops these risks before you even notice.',

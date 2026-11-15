@@ -11,26 +11,26 @@
 /* Açık tema: hero scrim + metin */
 [data-theme="light"] .hero-scrim{
   background:
-    linear-gradient(90deg,rgba(247,245,255,.95) 0%,rgba(247,245,255,.72) 46%,rgba(247,245,255,.08) 76%),
-    linear-gradient(0deg,rgba(247,245,255,.78) 0%,rgba(247,245,255,0) 46%),
-    linear-gradient(180deg,rgba(247,245,255,.5) 0%,rgba(247,245,255,0) 24%);
+    linear-gradient(90deg,rgba(247,245,255,.80) 0%,rgba(247,245,255,.52) 46%,rgba(247,245,255,.05) 76%),
+    linear-gradient(0deg,rgba(247,245,255,.58) 0%,rgba(247,245,255,0) 42%),
+    linear-gradient(180deg,rgba(247,245,255,.35) 0%,rgba(247,245,255,0) 22%);
 }
 [data-theme="light"] .hero-title{color:#160B33}
 [data-theme="light"] .hero-title .hl{color:#6A2BE9}
 [data-theme="light"] .hero-title .hl3{color:#5C7A00}
-[data-theme="light"] .hero-sub{color:rgba(22,11,51,.9)}
+[data-theme="light"] .hero-sub{color:rgba(22,11,51,.94);text-shadow:0 1px 12px rgba(255,255,255,.7)}
 
 /* Vitrin metni artık görselin altında: alttan yukarı açılan maske */
 .showcase-overlay{
   justify-content:flex-end;
   padding:clamp(56px,8vh,96px) 24px clamp(48px,7vh,88px);
-  background:linear-gradient(0deg,rgba(14,7,32,.94) 0%,rgba(14,7,32,.68) 34%,rgba(14,7,32,0) 62%);
+  background:linear-gradient(0deg,rgba(14,7,32,.85) 0%,rgba(14,7,32,.48) 32%,rgba(14,7,32,0) 58%);
 }
 
 /* Açık tema: vitrin scrim + metin */
 [data-theme="light"] .showcase-overlay{
-  background:linear-gradient(0deg,rgba(247,245,255,.96) 0%,rgba(247,245,255,.75) 34%,rgba(247,245,255,0) 62%);
-  text-shadow:none;
+  background:linear-gradient(0deg,rgba(247,245,255,.86) 0%,rgba(247,245,255,.52) 32%,rgba(247,245,255,0) 58%);
+  text-shadow:0 1px 10px rgba(255,255,255,.65);
 }
 [data-theme="light"] .showcase-title{color:#160B33}
 [data-theme="light"] .showcase-lead{color:rgba(22,11,51,.92)}
@@ -69,10 +69,12 @@
   .hero-bg.bg-day{filter:none}
   [data-theme="light"] .hero-scrim{
     background:
-      linear-gradient(90deg,rgba(247,245,255,.92) 0%,rgba(247,245,255,.80) 55%,rgba(247,245,255,.55) 100%),
-      linear-gradient(0deg,rgba(247,245,255,.85) 0%,rgba(247,245,255,.25) 55%),
-      linear-gradient(180deg,rgba(247,245,255,.55) 0%,rgba(247,245,255,.10) 26%);
+      linear-gradient(90deg,rgba(247,245,255,.58) 0%,rgba(247,245,255,.42) 55%,rgba(247,245,255,.24) 100%),
+      linear-gradient(0deg,rgba(247,245,255,.48) 0%,rgba(247,245,255,.12) 55%),
+      linear-gradient(180deg,rgba(247,245,255,.30) 0%,rgba(247,245,255,.05) 26%);
   }
+  [data-theme="light"] .hero-sub{text-shadow:0 1px 14px rgba(255,255,255,.85)}
+  [data-theme="light"] .hero-title{text-shadow:0 1px 16px rgba(255,255,255,.75)}
 }
 @media (prefers-reduced-motion:reduce){
   .hero-bg,.showcase-card img{transition:none}
@@ -107,3 +109,7 @@
 /* Sol üst logo her temada orijinal mor sürümde kalır */
 .brand .logo-light{display:block !important}
 .brand .logo-dark{display:none !important}
+
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center}
+.btn-video{display:inline-flex;align-items:center;gap:7px}
+.btn-video .vicon{width:17px;height:14px;flex:none}
