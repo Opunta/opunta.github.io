@@ -1,5 +1,5 @@
 /* ---------- Videolar: ilk ziyarette yüklenir ---------- */
-window.OPUNTA_VIDEO = {"film": "assets/video/personal.mp4", "kurumsal": "assets/video/corporate.mp4"};
+window.OPUNTA_VIDEO = {"film": "assets/video/personal.mp4", "kurumsal": "assets/video/corporate.mp4", "konsol": "assets/video/console.mp4"};
 (function () {
   function assign() {
     var v = document.querySelector(".page-view:not([hidden]) video[data-src-key]");

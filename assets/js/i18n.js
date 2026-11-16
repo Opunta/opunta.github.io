@@ -303,7 +303,7 @@ Object.assign(window.OPUNTA_I18N.en, {
   "home.lc.s4d": "<span class='brand-word'>opunta</span> creates and keeps sealed records. Who opened what and when is presented with audit-ready evidence, in a structure that supports compliance work.",
 
   "corp.ct.eyebrow": "<span class='brand-word'>opunta</span> Control Tower",
-  "corp.ct.title": "Central Management Console & Technical Specifications",
+  "corp.ct.title": "Central Management Console<br>& Technical Specifications",
   "corp.ct.lead": "The eight modules <span class='brand-word'>opunta</span> offers turn browser and AI activity into visible, manageable and auditable enterprise telemetry. Central policies, records and auditing stay on your infrastructure, under your control.",
 
   "corp.t1t": "Central Policy",

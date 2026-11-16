@@ -111,5 +111,7 @@
 .brand .logo-dark{display:none !important}
 
 .btn-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center}
+.ct-split{display:grid;grid-template-columns:0.95fr 1.05fr;gap:44px;align-items:center}
+@media (max-width:768px){.ct-split{grid-template-columns:1fr;gap:28px}}
 .btn-video{display:inline-flex;align-items:center;gap:7px}
 .btn-video .vicon{width:17px;height:14px;flex:none}
